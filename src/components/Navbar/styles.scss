@@ -1,0 +1,37 @@
+.container_global {
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: auto;
+}
+
+.left_items {
+  gap: 20px;
+}
+
+button.button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: rgb(96, 95, 95);
+  transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+  font-weight: normal;
+}
+
+button.button:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.right_items {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}

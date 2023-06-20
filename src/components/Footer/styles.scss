@@ -1,0 +1,44 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.main-footer {
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(224, 224, 227);
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.icon-text {
+  margin-left: -65px;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-text p {
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  margin-right: -130px;
+  margin-top: -63px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.logo img {
+  width: 90px;
+  height: 79px;
+}
