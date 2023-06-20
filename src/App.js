@@ -1,16 +1,12 @@
-import React from 'react';
-import NavBar from './components/Navbar';
-import Footer from './components/Footer';
-import './App.css';
+import React from "react";
+
+import "./App.css";
+import Router from "./router";
 
 const App = () => {
   return (
     <div className="app-container">
-      <NavBar />
-      <div className="container">
-        {/* Contenido de tu aplicación */}
-      </div>
-      <Footer />
+      <Router />
     </div>
   );
 };

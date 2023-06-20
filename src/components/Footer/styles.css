@@ -1,5 +1,5 @@
+@charset "UTF-8";
 @import "~bootstrap/dist/css/bootstrap.min.css";
-
 .main-footer {
   height: 75px;
   position: fixed;
@@ -11,8 +11,6 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-
- 
 }
 
 .icon-text {
@@ -44,4 +42,4 @@
 .logo img {
   width: 90px;
   height: 79px;
-}
+}/*# sourceMappingURL=styles.css.map */
