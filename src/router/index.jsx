@@ -6,6 +6,7 @@ import SobreNosotros from "../container/SobreNosotros";
 import ItemDetailProyects from "../container/ItemDetailProyects";
 import Contacto from "../container/Contacto";
 import Colaboradores from "../container/Colaboradores";
+// import Home from "../container/Home";
 
 
 
@@ -18,10 +19,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <ItemListProyects />,
+        element: <ItemListProyects/>,
       },
       {
-        path: "/category/:categoryId",
+        path: "/proyects",
         element: <ItemListProyects />,
       },
 

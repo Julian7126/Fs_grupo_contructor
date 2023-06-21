@@ -6,7 +6,3 @@
   position: relative;
 
 }
-.progress-bar{
-  height: 6px; /* Altura deseada de la barra de progreso */
-  background-color: rgb(241, 40, 0); /* Color de fondo deseado */
-}

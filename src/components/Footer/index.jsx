@@ -18,14 +18,14 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           {/* columna 1 */}
-          <div className="col-lg-3 col-md-4 col-sm-6">
+          <div className="col-lg-3 col-md-4 col-sm-12">
             <div className="icon-text">
               <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
               <p className="footer-text">fsalas@fsgrupocontructor.com</p>
             </div>
           </div>
           {/* columna 2 */}
-          <div className="col-lg-2 col-md-4 col-sm-6">
+          <div className="col-lg-2 col-md-4 col-sm-12">
             <div className="icon-text">
               <FontAwesomeIcon icon={faMobileButton} className="footer-icon" />
               <p className="footer-text">+506 8924 9056</p>

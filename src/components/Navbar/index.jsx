@@ -12,7 +12,7 @@ const NavBar = () => {
         <button className="button" onClick={() => navigate('/')} >Home</button>
       </div>
       <div className="right_items">
-        <button className="button"onClick={() => navigate('/category/:categoryId')} >Proyectos</button>
+        <button className="button"onClick={() => navigate('/proyects')} >Proyectos</button>
         <button className="button"onClick={() => navigate('/colaboradores')} >Colaboradores</button>
         <button className="button" onClick={() => navigate('/contacto')}>Contacto</button>
         <button className="button" onClick={() => navigate('/sobreNosotros')}>Sobre Nosotros</button>
