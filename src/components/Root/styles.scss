@@ -1,0 +1,10 @@
+.progress-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    /* Altura deseada de la barra de progreso */
+    background-color: rgb(168, 168, 167); /* Color de fondo deseado */
+    transform-origin: 0%;
+  }

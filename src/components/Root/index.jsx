@@ -4,26 +4,34 @@ import NavBar from "../Navbar";
 import Footer from "../Footer";
 import { motion as m } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import { motion as scroll, useScroll, useSpring } from "framer-motion";
+import "./styles.scss"
 
 const Root = () => {
   const location = useLocation();
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress);
 
   return (
-    <AnimatePresence mode="out-in">
+    <>
+    
+    <scroll.div  className="progress-bar" style={{ scaleX }}/>
+    <AnimatePresence mode="wait">
       <m.div
         key={location.pathname}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         exit={{ opacity: 0 }}
-      >
+        >
         <NavBar />
-        <div style={{ marginTop: "40px" }}>
+        <div style={{ marginTop: "10px" }}>
           <Outlet />
           <Footer />
         </div>
       </m.div>
     </AnimatePresence>
+        </>
   );
 };
 
