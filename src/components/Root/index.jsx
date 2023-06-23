@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import NavBar from "../Navbar";
-import Footer from "../Footer";
+
 import { motion as m } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import { motion as scroll, useScroll, useSpring } from "framer-motion";
@@ -27,7 +27,7 @@ const Root = () => {
         <NavBar />
         <div style={{ marginTop: "10px" }}>
           <Outlet />
-          <Footer />
+          
         </div>
       </m.div>
     </AnimatePresence>

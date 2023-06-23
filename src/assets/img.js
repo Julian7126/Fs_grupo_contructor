@@ -10,6 +10,24 @@ import ciudadMujer2 from "./CiudadMujer2.png.jpg"
 import ciudadMujer3 from "./CiudadMujer3.jpg"
 import concretoArmado1 from "./ConcretoArmado.jpg"
 import electromecanica from "./Electromecanica.jpg"
+import oficinas1 from "./Oficinas1.jpg"
+import oficinas2 from "./Oficinas2.jpg"
+import psicina from "./Psicina.jpg"
+import entrepisos from "./EntrePisos.jpg"
+import mallOxigenoPsicina from "./MallOxigenoPiscina.jpg"
+import mallOxigenoSupresion from "./MallOxigenoSupresion.jpg"
+import movimientoDeTierra from "./MovimientoDeTierra.jpg"
+
+import residenciaH10 from "./ResidenciaH10.jpg"
+import techosVerdes from "./TechosVerdes.jpg"
+import trabajoEnAltura from "./TrabajoEnAltura.jpg"
+import terraza from "./Terraza.jpg"
+import losaDeFundacion from "./LosasDeFundacionResidenciaHeredia.jpg"
+import gymM from "./GimnasioMultiusosCOLYPRO.jpg"
+import gymM2 from "./GimnasioMultiusosCOLYPRO2.jpg"
+import haciendoespavel from "./HaciendoEspavel.jpg"
+import iluminasionGimnasioSanRafael from "./IluminasionGimnasioSanRafael.jpg"
+
 
 
 
@@ -30,7 +48,25 @@ imgCiudadMujer1: ciudadMujer1,
 imgCiudadMujer2:ciudadMujer2,
 imgCiudadMujer3:ciudadMujer3,
 imgConcretoArmado1: concretoArmado1,
-imgElectroMecanica1: electromecanica
+imgElectroMecanica1: electromecanica,
+imgOficinas1 : oficinas1,
+imgOficinas2 : oficinas2,
+imgPsicina: psicina,
+imgEntrePisos: entrepisos,
+ImgMallOxigenoPsicina: mallOxigenoPsicina,
+ImgmallOxigenoSupresion:mallOxigenoSupresion,
+ImgmovimientoDeTierra: movimientoDeTierra,
+ImgResidenciaH10: residenciaH10,
+ImgtechosVerdes: techosVerdes,
+ImgtrabajoEnAltura: trabajoEnAltura,
+Imgterraza: terraza,
+ImglosaDeFundacion: losaDeFundacion,
+ImgGymM: gymM,
+ImgGymM2 : gymM2,
+Imghaciendoespavel: haciendoespavel,
+ImgiluminasionGimnasioSanRafael: iluminasionGimnasioSanRafael,
+
+
 
 
 
