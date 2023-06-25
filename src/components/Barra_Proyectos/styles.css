@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.row.justify-content-end > div {
+  margin-top: 25px;
+  -webkit-margin-after: 25px;
+          margin-block-end: 25px;
+  margin-right: -60px; /* Ajusta el valor según tus necesidades */
+}
+
+button.button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: rgb(96, 95, 95);
+  transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+  font-weight: normal;
+}
+
+button.button:hover {
+  font-weight: bold;
+  color: black;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,1 +1,74 @@
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+.colaboradores-container {
+  display: flex;
+  height: 100vh;
+}
+
+.colaboradores-text {
+  width: 65%;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.colaboradores-text h1 {
+  display: flex;
+  font-size: 24px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -120px;
+}
+
+.colaboradores-text p {
+  display: flex;
+  font-size: 16px;
+  line-height: 1.5;
+  justify-content: center;
+  align-items: center;
+  padding: 65px;
+}
+
+.colaboradores-images-container {
+  background-color: rgb(222, 222, 222);
+  height: 600px; /* Ajusta la altura según tus necesidades */
+  width: 35%;
+  overflow-y: scroll;
+  scrollbar-color: rgb(0, 0, 0);
+  opacity: 1;
+  /* Estilos para WebKit (Safari, Chrome) */
+}
+.colaboradores-images-container::-webkit-scrollbar {
+  width: 3px; /* Ancho del scroll */
+}
+.colaboradores-images-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Color de la barra del scroll */
+}
+.colaboradores-images-container::-webkit-scrollbar-track {
+  background-color: transparent; /* Color del fondo del scroll */
+}
+
+.container-images {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 120px;
+}
+
+.colaboradores-images-container .small-image {
+  width: 320px; /* Ajusta el tamaño deseado de la imagen */
+  height: 250px;
+}
+
+.colaboradores-images-container p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 45px;
+}/*# sourceMappingURL=styles.css.map */

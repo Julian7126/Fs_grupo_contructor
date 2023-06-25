@@ -23,7 +23,7 @@ const projects = [
    { id: 20, name: 'GymM', image: images.ImgGymM },
    { id: 21, name: 'GymM2 ', image: images.ImgGymM2 },
    { id: 22, name: 'Haciendo Espavel ', image: images.Imghaciendoespavel },
-   { id: 22, name: 'Iluminasion Gimnasio San Rafael', image: images.ImgiluminasionGimnasioSanRafael },
+   { id: 23, name: 'Iluminasion Gimnasio San Rafael', image: images.ImgiluminasionGimnasioSanRafael },
 
 
 ];

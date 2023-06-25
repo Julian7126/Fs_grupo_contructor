@@ -9,14 +9,10 @@ import {
 import images from "../../assets/img";
 
 const Footer = () => {
-
-
   return (
-    <div
-      className="main-footer" 
-    >
+    <div className="main-footer">
       <div className="container">
-        <div className="row">
+        <div className="row align-items-center">
           {/* columna 1 */}
           <div className="col-lg-3 col-md-4 col-sm-12">
             <div className="icon-text">
@@ -38,8 +34,8 @@ const Footer = () => {
               <p className="footer-text">Heredia y Lindora</p>
             </div>
           </div>
-
-          <div className="container-1">
+          {/* columna 4 */}
+          <div className="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-end">
             <div className="logo">
               <img src={images.imgLogo} alt="logo_de_fs_contrucciones" />
             </div>

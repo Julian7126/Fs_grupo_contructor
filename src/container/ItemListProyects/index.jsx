@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles.scss";
+import { AnimatePresence, motion } from "framer-motion";
 import ProyectosNavegador from "../../components/Barra_Proyectos";
 import Proyects from "../../components/Proyects";
 import ProyectsInProgress from "../../components/ProyectsInProgress";
@@ -14,9 +15,31 @@ const ItemListProyects = () => {
   return (
     <>
       <ProyectosNavegador onTabChange={handleTabChange} />
-      <div>
-        {activeTab === "proyects" && <Proyects />}
-        {activeTab === "inProgress" && <ProyectsInProgress />}
+      <div className="scrollable-container">
+        <AnimatePresence mode="wait">
+          {activeTab === "proyects" && (
+            <motion.div
+              key="proyects"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Proyects />
+            </motion.div>
+          )}
+          {activeTab === "inProgress" && (
+            <motion.div
+              key="inProgress"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.5 }}
+            >
+              <ProyectsInProgress />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </>
   );

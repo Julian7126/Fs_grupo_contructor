@@ -4,5 +4,14 @@
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
   position: relative;
+  overflow: hidden;
+
+
+}
+
+.progress-bar{
+  height: 10px;
+  /* Altura deseada de la barra de progreso */
+  background-color: rgb(217, 136, 136); /* Color de fondo deseado */
 
 }

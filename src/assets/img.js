@@ -27,6 +27,7 @@ import gymM from "./GimnasioMultiusosCOLYPRO.jpg"
 import gymM2 from "./GimnasioMultiusosCOLYPRO2.jpg"
 import haciendoespavel from "./HaciendoEspavel.jpg"
 import iluminasionGimnasioSanRafael from "./IluminasionGimnasioSanRafael.jpg"
+import multi from "./multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg"
 
 
 
@@ -65,6 +66,7 @@ ImgGymM: gymM,
 ImgGymM2 : gymM2,
 Imghaciendoespavel: haciendoespavel,
 ImgiluminasionGimnasioSanRafael: iluminasionGimnasioSanRafael,
+multira: multi,
 
 
 

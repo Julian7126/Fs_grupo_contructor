@@ -1,1 +1,20 @@
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+.scrollable-container {
+  height: 600px; /* Ajusta la altura según tus necesidades */
+  overflow-y: scroll;
+  scrollbar-width: thin; /* Ancho del scroll */
+  scrollbar-color: rgb(0, 0, 0); /* Color del scroll */
+}
+
+/* Estilos para WebKit (Safari, Chrome) */
+.scrollable-container::-webkit-scrollbar {
+  width: 3px; /* Ancho del scroll */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Color de la barra del scroll */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background-color: transparent; /* Color del fondo del scroll */
+}/*# sourceMappingURL=styles.css.map */
