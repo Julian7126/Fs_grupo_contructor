@@ -3,13 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import './styles.scss';
 
 
+
+
 const NavBar = () => {
   const navigate = useNavigate();
 
   return (
     <div className="container_global">
       <div className="left_items">
-        <button className="button" onClick={() => navigate('/')} >Home</button>
+        <button className="button" onClick={() => navigate('/')}>Home</button>
       </div>
       <div className="right_items">
         <button className="button"onClick={() => navigate('/proyects')} >Proyectos</button>

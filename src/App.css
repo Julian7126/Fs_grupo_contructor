@@ -4,14 +4,21 @@
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
   position: relative;
-  overflow: hidden;
 
 
-}
 
-.progress-bar{
-  height: 10px;
-  /* Altura deseada de la barra de progreso */
-  background-color: rgb(217, 136, 136); /* Color de fondo deseado */
+
+  &::-webkit-scrollbar {
+    width: 3px; /* Ancho del scroll */
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Color de la barra del scroll */
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: transparent; /* Color del fondo del scroll */
+  }
+
 
 }

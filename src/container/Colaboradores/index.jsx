@@ -1,18 +1,18 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./styles.scss";
 import Footer from "../../components/Footer";
 import images from "../../assets/img";
 import Image from "react-bootstrap/Image";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 const Colaboradores = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Duración de la animación en milisegundos
-      once: true, // La animación se activa solo una vez al desplazarse a la sección
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000, // Duración de la animación en milisegundos
+  //     once: true, // La animación se activa solo una vez al desplazarse a la sección
+  //   });
+  // }, []);
 
   // Lista de colaboradores con sus nombres e imágenes
   const colaboradores = [
@@ -27,6 +27,7 @@ const Colaboradores = () => {
     <div className="colaboradores-container">
       <div className="colaboradores-text">
         <h1>Muchas gracias!</h1>
+        <span class="underline"></span>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna nec felis scelerisque hendrerit.
           Nullam viverra lacus vel nisl eleifend, at suscipit ligula malesuada. Integer at dolor vel erat vestibulum
@@ -35,7 +36,7 @@ const Colaboradores = () => {
       </div>
       <div className="colaboradores-images-container">
         {colaboradores.map((colaborador, index) => (
-          <div className="container-images" key={index} data-aos="zoom-in-down">
+          <div className="container-images" key={index}>
             <Image src={colaborador.imagen} roundedCircle className="small-image" />
             <p>{colaborador.nombre}</p>
           </div>

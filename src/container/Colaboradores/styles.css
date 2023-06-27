@@ -34,11 +34,12 @@
 
 .colaboradores-images-container {
   background-color: rgb(222, 222, 222);
-  height: 600px; /* Ajusta la altura según tus necesidades */
+  height: 650px; /* Ajusta la altura según tus necesidades */
   width: 35%;
   overflow-y: scroll;
   scrollbar-color: rgb(0, 0, 0);
   opacity: 1;
+  scroll-behavior: smooth;
   /* Estilos para WebKit (Safari, Chrome) */
 }
 .colaboradores-images-container::-webkit-scrollbar {

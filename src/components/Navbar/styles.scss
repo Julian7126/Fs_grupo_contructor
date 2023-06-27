@@ -1,5 +1,5 @@
 .container_global {
-  background-color: transparent;
+  background-color: transparent ;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -9,6 +9,8 @@
   width: 100%;
   bottom: auto;
   font-size: 14px;
+ 
+
 }
 
 .left_items {
@@ -20,14 +22,14 @@ button.button {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: rgb(96, 95, 95);
+  color: rgb(96, 96, 95);
   transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
   font-weight: normal;
 }
 
 button.button:hover {
   font-weight: bold;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .right_items {

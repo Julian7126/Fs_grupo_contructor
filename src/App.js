@@ -1,14 +1,13 @@
 import React from "react";
 import "./App.css";
-import Router from "./router";
+import Modal from "./components/Modal";
+import imagenesModal from "./assets/imgModal";
 
 const App = () => {
   return (
-    <>
-      <div className="app-container">
-        <Router />
-      </div>
-    </>
+    <div className="app-container">
+      <Modal imagenes={imagenesModal} />
+    </div>
   );
 };
 

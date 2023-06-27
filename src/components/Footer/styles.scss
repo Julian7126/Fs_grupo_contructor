@@ -1,38 +1,89 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+
 .main-footer {
-  height: 75px;
+  height: 45px;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #B7B7B7;
+  background-color: #b7b7b7;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-.icon-text {
-  margin-top: -10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.icon-text p {
-  vertical-align: middle;
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.logo {
-  margin-left: auto;
-}
-
-.logo img {
-  height: 50px;
-  width: auto;
+.icon {
   margin-right: 10px;
+}
+
+.footer-icon {
+  color: #fff;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+.custom-modal {
+  display: flex;
+  position: fixed;
+  font-size: 14px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: beige;
+  background-color: #5c5c5c;
+  padding: 10px;
+  border-radius: 35px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-color: transparent;
+}
+
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(32, 31, 31, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-container{
+    font-size: 25px; 
+
+}
+.modal-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+
+@media (max-width: 767px) {
+  .main-footer {
+    padding: 10px;
+  }
+
+  .icon {
+    margin-top:8px;
+    margin-right: 5px;
+  }
+
+
 }

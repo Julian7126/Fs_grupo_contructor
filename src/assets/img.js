@@ -76,4 +76,6 @@ multira: multi,
 
 
 
+
+
 export default images;
