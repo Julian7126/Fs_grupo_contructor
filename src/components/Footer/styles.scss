@@ -1,6 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-
 .main-footer {
   height: 45px;
   position: fixed;
@@ -23,20 +22,16 @@
 .footer-icon {
   color: #fff;
   cursor: pointer;
-
 }
 
-
-
-
-
-
-
 .custom-modal {
+  height: 200px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   position: fixed;
   font-size: 14px;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: beige;
@@ -47,6 +42,7 @@
   justify-content: center;
   gap: 20px;
   border-color: transparent;
+  
 }
 
 .custom-modal-overlay {
@@ -55,25 +51,40 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(32, 31, 31, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.modal-container{
-    font-size: 25px; 
-
+.modal-container {
+  font-size: 25px;
+  text-align: center;
 }
-.modal-button{
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-icon {
+  font-size: 24px;
+  margin-bottom: 10px; /* Ajusta el espacio entre el ícono y el texto */
+}
+
+.modal-text {
+  font-size: 16px;
+  text-align: center;
+}
+
+.modal-button {
+  gap: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-
 }
-
 
 @media (max-width: 767px) {
   .main-footer {
@@ -81,9 +92,7 @@
   }
 
   .icon {
-    margin-top:8px;
+    margin-top: 8px;
     margin-right: 5px;
   }
-
-
 }

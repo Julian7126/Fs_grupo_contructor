@@ -1,20 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./styles.scss";
 import Footer from "../../components/Footer";
 import images from "../../assets/img";
 import Image from "react-bootstrap/Image";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 
 const Colaboradores = () => {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000, // Duración de la animación en milisegundos
-  //     once: true, // La animación se activa solo una vez al desplazarse a la sección
-  //   });
-  // }, []);
-
-  // Lista de colaboradores con sus nombres e imágenes
   const colaboradores = [
     { nombre: "Colaborador 1", imagen: images.multira },
     { nombre: "Colaborador 2", imagen: images.multira },
@@ -24,26 +15,38 @@ const Colaboradores = () => {
   ];
 
   return (
-    <div className="colaboradores-container">
-      <div className="colaboradores-text">
+    <motion.div className="colaboradores-container">
+      <motion.div
+        className="colaboradores-text"
+        initial={{ opacity: 0 }}
+         animate={{ opacity: 1}}
+        transition={{ duration: 2 }}
+       
+      >
         <h1>Muchas gracias!</h1>
-        <span class="underline"></span>
+        <span className="underline"></span>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor urna nec felis scelerisque hendrerit.
           Nullam viverra lacus vel nisl eleifend, at suscipit ligula malesuada. Integer at dolor vel erat vestibulum
           tempus in id lorem.
         </p>
-      </div>
-      <div className="colaboradores-images-container">
+      </motion.div>
+      <motion.div className="colaboradores-images-container">
         {colaboradores.map((colaborador, index) => (
-          <div className="container-images" key={index}>
+          <motion.div
+            className="container-images"
+            key={index}
+            initial={{ opacity: 0, y: 300 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: index * 0.2 }}
+          >
             <Image src={colaborador.imagen} roundedCircle className="small-image" />
             <p>{colaborador.nombre}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

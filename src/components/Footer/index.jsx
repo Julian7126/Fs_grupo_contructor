@@ -10,8 +10,6 @@ import {
 import Modal from "react-modal";
 import { motion } from "framer-motion";
 
-
-
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalText, setModalText] = useState("");
@@ -24,11 +22,9 @@ const Footer = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    console.log("modal Cerrado")
-    
+    console.log("modal Cerrado");
   };
 
-  
   const modalVariants = {
     hidden: { opacity: 0, y: "-100%" },
     visible: { opacity: 1, y: 0 },
@@ -78,15 +74,22 @@ const Footer = () => {
         className="custom-modal"
         overlayClassName="custom-modal-overlay"
       >
-        <motion.h1
+        <motion.div
           className="modal-container"
           initial="hidden"
           animate="visible"
           variants={modalVariants}
         >
-          {modalText}
-        </motion.h1>
-        <FontAwesomeIcon icon={faCircleXmark} onClick={closeModal} cursor="pointer" />
+          <div className="modal-content">
+            <FontAwesomeIcon
+              icon={faCircleXmark}
+              onClick={closeModal}
+              cursor="pointer"
+              className="modal-icon"
+            />
+            <h1 className="modal-text">{modalText}</h1>
+          </div>
+        </motion.div>
       </Modal>
     </footer>
   );
