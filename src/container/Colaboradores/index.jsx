@@ -38,7 +38,7 @@ const Colaboradores = () => {
             key={index}
             initial={{ opacity: 0, y: 300 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: index * 0.2 }}
+            transition={{ duration: 0.7, delay: index * 0.2 ,}}
           >
             <Image src={colaborador.imagen} roundedCircle className="small-image" />
             <p>{colaborador.nombre}</p>

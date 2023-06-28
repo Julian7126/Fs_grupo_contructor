@@ -37,9 +37,6 @@ import haciendoespavel from "./HaciendoEspavel.jpg"
  
  
  const imagenesModal = {
-    
-    
-    
     imgLara1: lara1,
     imgaPYW: aPYW,
     imgCasaGarita1: CasaGarita1,
@@ -57,9 +54,6 @@ import haciendoespavel from "./HaciendoEspavel.jpg"
     ImglosaDeFundacion: losaDeFundacion,
     ImgGymM: gymM,
     Imghaciendoespavel: haciendoespavel,
-
-    
-
 }
 
 export default imagenesModal;

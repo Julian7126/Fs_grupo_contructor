@@ -5,7 +5,13 @@ import "./styles.scss"
 const SobreNosotros = () => {
   return (
     <>
-    <div className='contenedor'>SobreNosotros</div>
+    <div className='contenedor-main-sobre-nosotros'>
+
+
+
+
+      
+    </div>
 
 
     </>
