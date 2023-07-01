@@ -1,7 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import './styles.scss';
 import YouTubeVideo from '../../assets/Youtube';
-
+import Footer from "../../components/Footer/index"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Spline = lazy(() => import('@splinetool/react-spline'));
 
@@ -26,28 +27,7 @@ const SobreNosotros = () => {
         </p>
       </div>
       <YouTubeVideo />
-      <div className="contenedor-filas">
-        <div className="fila bg-gradual-1">
-          <p className="fila-texto">
-            Satisfacer las necesidades que posean los clientes, respecto de la construcción de proyectos, siempre con la mayor calidad.
-          </p>
-        </div>
-        <div className="fila bg-gradual-2">
-          <p className="fila-texto">
-            Ser amigable con el ambiente, al utilizar poca energía y no malgastar los recursos naturales, demostrando nuestra responsabilidad social empresarial (RSE).
-          </p>
-        </div>
-        <div className="fila bg-gradual-3">
-          <p className="fila-texto">
-            Demostrar los valores que nos caracterizan, los cuales son integridad, responsabilidad, compromiso, dedicación y solidaridad.
-          </p>
-        </div>
-        <div className="fila bg-gradual-4">
-          <p className="fila-texto">
-            Ofrecer siempre más allá de lo previsto, lo que el cliente desee se lo diseñará y construirá.
-          </p>
-        </div>
-      </div>
+      <Footer/>
       
     </div>
   );
