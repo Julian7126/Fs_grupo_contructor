@@ -28,8 +28,12 @@ import gymM2 from "./GimnasioMultiusosCOLYPRO2.jpg"
 import haciendoespavel from "./HaciendoEspavel.jpg"
 import iluminasionGimnasioSanRafael from "./IluminasionGimnasioSanRafael.jpg"
 import multi from "./multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg"
-
-
+import pinilla from "../assets/Pinilla/Front.jpg"
+import pinillaBack1 from "../assets/Pinilla/back.jpg"
+import pinillaBack2 from "../assets/Pinilla/back2.jpg"
+import pinillaRight from "../assets/Pinilla/right.jpg"
+import pinillaElevacion from "../assets/Pinilla/ElevacionIzquierda.jpg"
+import pinillaElevacion2 from "../assets/Pinilla/elevacionDerecha.jpg"
 
 
 
@@ -38,7 +42,14 @@ import multi from "./multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg"
 
 
 const images = {
+
 imgLogo: logo,
+imgFrontPinilla: pinilla,
+imgBackPinilla: pinillaBack1,
+imgBack2Pinilla: pinillaBack2,
+imgRightPinilla: pinillaRight,
+imgElevacionPinilla: pinillaElevacion,
+imgElevacion2Pinilla: pinillaElevacion2,
 imgLara1: lara1,
 imgLara2: lara2,
 imgaPYW: aPYW,
