@@ -27,18 +27,15 @@
 }
 
 .colaboradores-images-container {
-
   width: 35%;
   overflow-y: scroll;
   scrollbar-color: rgb(0, 0, 0);
   opacity: 1;
   padding: 20px;
-    background-image: 
-    url("../../assets/Marmol.jpg");
+  background-image: url("../../assets/Marmol.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 
 .container-images {
@@ -48,7 +45,6 @@
   flex-direction: column;
   gap: 25px;
   padding: 120px;
-  
 }
 
 .container-images > div {
@@ -59,9 +55,9 @@
 }
 
 .colaboradores-images-container .small-image {
-  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-  height: auto; /* La altura se ajustará automáticamente según el ancho */
-  max-width: 300px; /* Establece un ancho máximo para evitar que la imagen se agrande demasiado */
+  width: 100%;
+  height: auto;
+  max-width: 300px;
 }
 
 .colaboradores-images-container p {
@@ -71,17 +67,56 @@
   margin-left: 45px;
 }
 
-@media screen and (max-width: 760px) {
-  .colaboradores-images-container .small-image {
-    
-  }
-  .colaboradores-text h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 10px;
-    border-bottom: 0.5px solid #000;
-    padding-bottom: 15px;
-  }
-
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo con opacidad */
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
 
 }
+
+.colaborador_detail {
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  
+  margin: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .colaboradores-images-container .small-image {
+    /* Estilos adicionales para pantallas pequeñas */
+  }
+
+ 
+
+.colaboradores-text h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 0.5px solid #000;
+  padding-bottom: 15px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

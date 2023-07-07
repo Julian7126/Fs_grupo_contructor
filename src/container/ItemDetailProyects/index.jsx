@@ -62,7 +62,7 @@ const ProyectsDetail = () => {
             />
           </animated.div>
         </div>
-        <div className="name">
+        <div className="name_project">
           <h1 className="project-name">{project.name}</h1>
         </div>
 

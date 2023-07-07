@@ -5,29 +5,19 @@ import {
   faEnvelope,
   faLocationDot,
   faMobileButton,
-  faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-modal";
-import { motion } from "framer-motion";
+import EnviarMail from '../EnviarMail/index';
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalText, setModalText] = useState("");
 
-  const openModal = (text) => {
+  const openModal = () => {
     setIsModalOpen(true);
-    setModalText(text);
-    console.log("Modal abierto");
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
-    console.log("modal Cerrado");
-  };
-
-  const modalVariants = {
-    hidden: { opacity: 0, y: "-100%" },
-    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -36,33 +26,35 @@ const Footer = () => {
         <div className="row align-items-center">
           {/* columna 1 */}
           <div className="col-lg-4 col-4 d-flex justify-content-start">
-            <div className="icon d-flex justify-content-center align-items-center">
+            
               <FontAwesomeIcon
                 icon={faEnvelope}
                 className="footer-icon"
-                onClick={() => openModal("fsalas@fsgrupoconstructor.com")}
+                onClick={openModal}
               />
-            </div>
+          
           </div>
           {/* columna 2 */}
           <div className="col-lg-4 col-4 d-flex justify-content-center">
-            <div className="icon d-flex justify-content-center align-items-center">
+            
               <FontAwesomeIcon
                 icon={faMobileButton}
                 className="footer-icon"
-                onClick={() => openModal("+506 8924-9056")}
+                onClick={() => {
+                  window.open("https://api.whatsapp.com/send?phone=50689249056", "_blank");
+                }}
               />
-            </div>
+            
           </div>
           {/* columna 3 */}
           <div className="col-lg-4 col-4 d-flex justify-content-end">
-            <div className="icon d-flex justify-content-center align-items-center">
+           
               <FontAwesomeIcon
                 icon={faLocationDot}
                 className="footer-icon"
-                onClick={() => openModal("Heredia Y Lidora")}
+                onClick={() => ("Heredia Y Lidora")}
               />
-            </div>
+            
           </div>
         </div>
       </div>
@@ -74,22 +66,11 @@ const Footer = () => {
         className="custom-modal"
         overlayClassName="custom-modal-overlay"
       >
-        <motion.div
-          className="modal-container"
-          initial="hidden"
-          animate="visible"
-          variants={modalVariants}
-        >
-          <div className="modal-content">
-            <FontAwesomeIcon
-              icon={faCircleXmark}
-              onClick={closeModal}
-              cursor="pointer"
-              className="modal-icon"
-            />
-            <h1 className="modal-text">{modalText}</h1>
-          </div>
-        </motion.div>
+       
+         
+            <EnviarMail closeModal={closeModal} />
+          
+    
       </Modal>
     </footer>
   );

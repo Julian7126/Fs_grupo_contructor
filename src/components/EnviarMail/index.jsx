@@ -1,9 +1,12 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './styles.scss';
-import Footer from "../../components/Footer"
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Contacto = () => {
+
+
+const EnviarMail = ({ closeModal }) => {
   const refForm = useRef();
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showErrorMessage, setShowErrorMessage] = useState(false);
@@ -37,36 +40,43 @@ const Contacto = () => {
   return (
     <>
       <div className="container_de_todo_contacto">
+        <FontAwesomeIcon
+            icon={faTimes}
+            className="close-icon"
+            onClick={closeModal}
+          />
         <div className="container_contact">
+
+
           <div className="Titulo_form_contact">
-            <h1>¿Te gustaría ponerte en contacto?</h1>
+            <h1>¿TE GUSTARIA PONERTE EN CONTACTO?</h1>
           </div>
 
           <form ref={refForm} action="" onSubmit={handleSubmit}>
             <fieldset>
-              <label htmlFor="">Nombre</label>
+              <label htmlFor="">N O M B R E</label>
               <input name="username" type="text" placeholder="" required />
             </fieldset>
 
             <fieldset>
               <label htmlFor="" name="email">
-                Email
+                E M A I L
               </label>
               <input name="email" id="email" type="email" placeholder="" required />
             </fieldset>
 
             <fieldset>
               <label htmlFor="" name="phone">
-                Teléfono
+                T E L E F O N O
               </label>
               <input name="phone" id="" type="text" placeholder="" required />
             </fieldset>
 
             <fieldset>
               <label htmlFor="" name="message">
-                Mensaje
+                M E N S A J E 
               </label>
-              <textarea maxLength="800" name="message" id="" type="text" placeholder="Cuéntanos un poco más" cols="30" rows="10" required />
+              <textarea maxLength="800" name="message" id="" type="text" placeholder="Cuéntanos un poco más" cols="110" rows="5" required />
             </fieldset>
 
             <button type="submit">Enviar</button>
@@ -92,9 +102,8 @@ const Contacto = () => {
         </div>
       </div>
 
-      <Footer />
     </>
   );
 };
 
-export default Contacto;
+export default EnviarMail;

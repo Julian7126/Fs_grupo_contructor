@@ -1,46 +1,40 @@
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "../components/Root";
-import ItemListProyects from "../container/ItemListProyects";
-import SobreNosotros from "../container/SobreNosotros";
-import ItemDetailProyects from "../container/ItemDetailProyects";
-import Contacto from "../container/Contacto";
-import Colaboradores from "../container/Colaboradores";
-// import Home from "../container/Home";
-
-
-
+import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Root from '../components/Root';
+import ItemListProyects from '../container/ItemListProyects';
+import SobreNosotros from '../container/SobreNosotros';
+import ItemDetailProyects from '../container/ItemDetailProyects';
+import Contacto from '../container/Contacto';
+import Colaboradores from '../container/Colaboradores';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Root />,
     errorElement: <p>No Encontrado</p>,
     children: [
       {
-        path: "/",
-        element: <ItemListProyects/>,
-      },
-      {
-        path: "/proyects",
+        path: '/',
         element: <ItemListProyects />,
       },
-
       {
-        path: "/detail/:id",
+        path: '/proyects',
+        element: <ItemListProyects />,
+      },
+      {
+        path: '/detail/:id',
         element: <ItemDetailProyects />,
       },
-
       {
-        path: "/sobreNosotros",
+        path: '/sobreNosotros',
         element: <SobreNosotros />,
       },
       {
-        path: "/contacto",
+        path: '/contacto',
         element: <Contacto />,
       },
       {
-        path: "/colaboradores",
+        path: '/colaboradores',
         element: <Colaboradores />,
       },
     ],
@@ -48,12 +42,6 @@ const router = createBrowserRouter([
 ]);
 
 const Router = () => {
-
- 
-
-
-
-
   return <RouterProvider router={router} />;
 };
 

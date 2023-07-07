@@ -7,11 +7,11 @@ import Image from "react-bootstrap/Image";
 
 const Colaboradores = () => {
   const colaboradores = [
-    { nombre: "Colaborador 1", imagen: images.multira },
-    { nombre: "Colaborador 2", imagen: images.multira },
-    { nombre: "Colaborador 3", imagen: images.multira },
-    { nombre: "Colaborador 4", imagen: images.multira },
-    { nombre: "Colaborador 5", imagen: images.multira },
+    { nombre: "Fabian Salas Jiménez", imagen: images.multira, detail: "Director de Proyecto" },
+    { nombre: "Roy Pérez", imagen: images.multira, detail: "Ingeniero Electromecánico" },
+    { nombre: "Carolina Mora", imagen: images.multira, detail: "Arquitecta" },
+    { nombre: "Leiner Rivera", imagen: images.multira, detail: "Ingeniero Estructural" },
+    { nombre: "Gerardo Zamora", imagen: images.multira, detail: "Maestro de Obras" },
   ];
 
   return (
@@ -19,9 +19,8 @@ const Colaboradores = () => {
       <motion.div
         className="colaboradores-text"
         initial={{ opacity: 0 }}
-         animate={{ opacity: 1}}
+        animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
-       
       >
         <h1>Muchas gracias!</h1>
         <span className="underline"></span>
@@ -38,10 +37,13 @@ const Colaboradores = () => {
             key={index}
             initial={{ opacity: 0, y: 300 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: index * 0.2 ,}}
+            transition={{ duration: 0.7, delay: index * 0.2 }}
           >
             <Image src={colaborador.imagen} roundedCircle className="small-image" />
             <p>{colaborador.nombre}</p>
+            <div className="detail-container">
+              <p className="colaborador_detail">{colaborador.detail}</p>
+            </div>
           </motion.div>
         ))}
       </motion.div>

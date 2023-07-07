@@ -1,5 +1,5 @@
 .container_global {
-  background-color: transparent ;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo con opacidad */
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -9,8 +9,9 @@
   width: 100%;
   bottom: auto;
   font-size: 14px;
- 
-
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  background-image: url("../../assets/Marmol2.jpg");
 }
 
 .left_items {
@@ -22,18 +23,50 @@ button.button {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: rgb(96, 96, 95);
   transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
-  font-weight: normal;
+  font-weight: small;
+  color: #fff; /* Color inicial */
 }
 
 button.button:hover {
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: #000; /* Cambio a color negro */
 }
 
 .right_items {
-  gap: 40px;
+  gap: 120px;
   display: flex;
   align-items: center;
+  font-size: 14px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 767px) {
+  .container_global {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .right_items {
+    gap: 10px;
+  }
+
+  button.button {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container_global {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .right_items {
+    gap: 40px;
+  }
+
+  button.button {
+    font-size: 13px;
+  }
 }
