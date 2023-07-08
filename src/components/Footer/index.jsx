@@ -52,7 +52,8 @@ const Footer = () => {
               <FontAwesomeIcon
                 icon={faLocationDot}
                 className="footer-icon"
-                onClick={() => ("Heredia Y Lidora")}
+                onClick={() =>
+                window.open("https://www.google.com/maps?q=9.9298787,-84.1504029&hl=en-US&gl=cr&entry=gps&lucs=,47071704&g_ep=CAISBjYuNzMuMhgAINeCAyoJLDQ3MDcxNzA0QgJDUg%3D%3D&g_st=iw")}
               />
             
           </div>
