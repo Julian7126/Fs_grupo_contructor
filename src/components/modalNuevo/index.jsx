@@ -23,12 +23,12 @@ const NuevoSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000, // Cambia el valor a 1000 para que las imágenes cambien cada 1 segundo
     slidesToShow: 1,
     slidesToScroll: 1,
     className: "slider-container",
-    autoplay: true,
-    autoplaySpeed: 1500,
+    autoplay: isOpen, // Inicia el autoplay solo si isOpen es true
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 768, // Ajusta las configuraciones para pantallas de celular
@@ -43,43 +43,38 @@ const NuevoSlider = () => {
   };
 
   return (
-    <>
-      <div className="home_container">
-        {isOpen ? (
-          <div className="container-modal">
-            <div className="swiper-controler">
-              <div className="modal-button-container">
-                <button
-                  className="modal-enter-button-saltarin"
-                  onClick={handleClose}
-                >
-                  <FontAwesomeIcon icon={faHouse} />
-                </button>
-              </div>
+    <div className="home_container">
+      {isOpen ? (
+        <div className="container-modal">
+          <div className="swiper-controler">
+            <div className="modal-button-container">
+              <button className="modal-enter-button-saltarin" onClick={handleClose}>
+                <FontAwesomeIcon icon={faHouse} />
+              </button>
             </div>
-            <Slider {...settings}>
-              <div>
-                <img src={slide_image_1} alt="slide_image" />
-              </div>
-              <div>
-                <img src={slide_image_2} alt="slide_image" />
-              </div>
-              <div>
-                <img src={slide_image_3} alt="slide_image" />
-              </div>
-              <div>
-                <img src={slide_image_4} alt="slide_image" />
-              </div>
-              <div>
-                <img src={slide_image_5} alt="slide_image" />
-              </div>
-            </Slider>
           </div>
-        ) : (
-          <Router />
-        )}
-      </div>
-    </>
+          <Slider {...settings}>
+            <div>
+              <img src={slide_image_1} alt="slide_image" />
+            </div>
+            <div>
+              <img src={slide_image_2} alt="slide_image" />
+            </div>
+            <div>
+              <img src={slide_image_3} alt="slide_image" />
+            </div>
+            <div>
+              <img src={slide_image_4} alt="slide_image" />
+            </div>
+            <div>
+              <img src={slide_image_5} alt="slide_image" />
+            </div>
+          </Slider>
+        </div>
+      ) : (
+        <Router />
+      )}
+    </div>
   );
 };
 
