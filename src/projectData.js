@@ -2,7 +2,7 @@ import images from "./assets/img";
 
 const projects = [
   
-    { id: 1, name: 'Pinilla', image: images.imgFrontPinilla , image2: images.imgBackPinilla, image3: images.imgBack2Pinilla, image4: images.imgRightPinilla , image5: images.imgElevacionPinilla ,image6: images.imgElevacion2Pinilla},
+    { id: 1, name: 'Pinilla', image: images.imgFrontPinilla , render1: images.imgBackPinilla, render2: images.imgBack2Pinilla, render3: images.imgRightPinilla , render4: images.imgElevacionPinilla ,render5: images.imgElevacion2Pinilla},
     { id: 2, name: 'Lara', image: images.imgLara1 },
     { id: 3, name: 'ApartamentoPYW', image: images.imgaPYW },
     { id: 4, name: 'CasaGarita', image: images.imgCasaGarita1 },

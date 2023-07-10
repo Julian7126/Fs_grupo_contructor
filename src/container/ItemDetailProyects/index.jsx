@@ -7,6 +7,10 @@ import { Container, Image, Col, Row } from "react-bootstrap";
 import { useSpring, animated, config } from "react-spring";
 import { motion } from "framer-motion";
 import LargeImageOverlay from "../../components/LargeImageOverlay";
+import Footer from "../../components/Footer"
+
+
+
 
 const ProyectsDetail = () => {
   const { id } = useParams();
@@ -67,9 +71,14 @@ const ProyectsDetail = () => {
         </div>
 
         <animated.div className="project-info" style={infoAnimation}>
-          {/* Agrega aquí los detalles adicionales del proyecto */}
-          <h2>Información del proyecto</h2>
-          <p>Detalles adicionales...</p>
+        <motion.ul>
+            <motion.li><strong>Ubicación:</strong> {project.location}</motion.li>
+            <motion.li><strong>Dirección:</strong> {project.address}</motion.li>
+            <motion.li><strong>M2 Construidos:</strong> {project.m2}</motion.li>
+            <motion.li><strong>Mano de obras:</strong> {project.manpower}</motion.li>
+            <motion.li><strong>Cliente:</strong> {project.client}</motion.li>
+            <motion.li><strong>Profesionales:</strong> {project.professionals}</motion.li>
+          </motion.ul>
         </animated.div>
 
         <motion.button
@@ -79,59 +88,185 @@ const ProyectsDetail = () => {
           {showProjectInfo ? "Ocultar" : "Más información"}
         </motion.button>
       </div>
+
+      <div className="container_secundario">
       <Container fluid>
-        <Row className="contenedor_secundario">
+        <h1 className="titulos">R E N D E R</h1>
+        <Row className="contenedor_row">
           <Col>
             <Image
-              src={project.image2}
+              src={project.render1}
               alt={project.name}
               fluid
-              onClick={() => handleImageClick(project.image2, "image2")}
+              onClick={() => handleImageClick(project.render1, "image2")}
               style={{ cursor: "pointer" }}
             />
           </Col>
           <Col>
             <Image
-              src={project.image3}
+              src={project.render2}
               alt={project.name}
               fluid
-              onClick={() => handleImageClick(project.image3, "image3")}
+              onClick={() => handleImageClick(project.render2, "image3")}
               style={{ cursor: "pointer" }}
             />
           </Col>
           <Col>
             <Image
-              src={project.image4}
+              src={project.render3}
               alt={project.name}
               fluid
-              onClick={() => handleImageClick(project.image4, "image4")}
+              onClick={() => handleImageClick(project.render3, "image4")}
               style={{ cursor: "pointer" }}
             />
           </Col>
           <Col>
             <Image
-              src={project.image5}
+              src={project.render4}
               alt={project.name}
               fluid
-              onClick={() => handleImageClick(project.image5, "image5")}
+              onClick={() => handleImageClick(project.render4, "image5")}
               style={{ cursor: "pointer" }}
             />
           </Col>
           <Col>
             <Image
-              src={project.image6}
+              src={project.render5}
               alt={project.name}
               fluid
-              onClick={() => handleImageClick(project.image6, "image6")}
+              onClick={() => handleImageClick(project.render5, "image6")}
               style={{ cursor: "pointer" }}
             />
           </Col>
         </Row>
+          <h1 className="titulos">C O N S T R U C C I O N</h1>
+
+          {/* <Row className="contenedor_row">
+          <Col>
+            <Image
+              src={project.render1}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render1, "image2")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+          <Col>
+            <Image
+              src={project.render2}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render2, "image3")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+          <Col>
+            <Image
+              src={project.render3}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render3, "image4")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+          <Col>
+            <Image
+              src={project.render4}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render4, "image5")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+          <Col>
+            <Image
+              src={project.render5}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render5, "image6")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+        </Row>
+        */}
+        
+
+        <h1 className="titulos">F I N A L I Z A D O</h1>
+
+{/* 
+        <Row className="contenedor_row">
+          <Col>
+            <Image
+              src={project.render1}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render1, "image2")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+          <Col>
+            <Image
+              src={project.render2}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render2, "image3")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+          <Col>
+            <Image
+              src={project.render3}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render3, "image4")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+          <Col>
+            <Image
+              src={project.render4}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render4, "image5")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+          <Col>
+            <Image
+              src={project.render5}
+              alt={project.name}
+              fluid
+              onClick={() => handleImageClick(project.render5, "image6")}
+              style={{ cursor: "pointer" }}
+            />
+          </Col>
+        </Row>
+
+
+          */}
+
+
+
+
       </Container>
+
+      </div>
       {showLargeImage && <LargeImageOverlay 
        handleCloseImage={handleCloseImage}
        largeImageUrl={largeImageUrl}
        imageIdentifier={imageIdentifier} />}
+
+
+      <div className="imgen_logo_detail">
+
+          <img src="" alt="" />
+
+
+      </div>
+
+
+       <Footer/>
+
     </>
   );
 };

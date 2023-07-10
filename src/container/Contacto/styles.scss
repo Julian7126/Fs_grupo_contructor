@@ -1,125 +1,13 @@
+@import "~@fortawesome/fontawesome-svg-core/styles.css";
 
-.container_de_todo_contacto{
-    background-image: url("../../assets/Marmol.jpg");
+.contacto_container {
+  background-image: url("../../assets/Marmol.jpg");
+  background-size: cover;
+  height: 700px;
+
 }
 
-.container_contact {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    width: 50%;
-    height: 100vh;
-    margin-left: 20px;
-  }
-  
-  .Titulo_form_contact {
-    display: flex;
-    justify-content: left;
-    margin-bottom: 40px;
-  }
-  
-  .Titulo_form_contact h1 {
- 
-    text-decoration-color: #b4b4b4;
-  
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  fieldset {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  fieldset label {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 5px;
-  }
-  
-  input[type='text'],
-  input[type='email'],
-  textarea {
-    background-color: #f2f2f2;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  button {
-    align-self: flex-start;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .modal_success-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content_contact {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .modal_error-modal h2 {
-    margin-bottom: 10px;
-  }
-  
-  .modal-content_contact button {
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .container_contact {
-        margin-top: 20px;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    form {
-      width: 80%;
-    }
-  
-    button {
-      align-self: center;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .container_contact {
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .Titulo_form_contact {
-      margin-bottom: 20px;
-    }
-  
-    form {
-      width: 90%;
-    }
-  }
-  
+.icon {
+  margin-right: 5px;
+  width: 20px;
+}
