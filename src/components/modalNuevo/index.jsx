@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useEffect, useRef } from "react";
 import Router from "../../router";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -15,23 +13,35 @@ import slide_image_5 from "../../assets/ControlEdit.jpg";
 
 const NuevoSlider = () => {
   const [isOpen, setIsOpen] = useState(true);
+  const [sliderInitialized, setSliderInitialized] = useState(false);
+  const sliderRef = useRef(null);
 
-  const handleClose = () => {
+  useEffect(() => {
+    setIsOpen(true);
+    setSliderInitialized(true);
+    const slider = sliderRef.current;
+    if (slider) {
+      slider.slickPlay();
+    }
+  }, []);
+
+  const handleImageDoubleClick = () => {
     setIsOpen(false);
   };
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 1000, // Cambia el valor a 1000 para que las imágenes cambien cada 1 segundo
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     className: "slider-container",
-    autoplay: isOpen, // Inicia el autoplay solo si isOpen es true
+    autoplay: true,
     autoplaySpeed: 2000,
+    pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 768, // Ajusta las configuraciones para pantallas de celular
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -46,28 +56,21 @@ const NuevoSlider = () => {
     <div className="home_container">
       {isOpen ? (
         <div className="container-modal">
-          <div className="swiper-controler">
-            <div className="modal-button-container">
-              <button className="modal-enter-button-saltarin" onClick={handleClose}>
-                <FontAwesomeIcon icon={faHouse} />
-              </button>
-            </div>
-          </div>
-          <Slider {...settings}>
+          <Slider ref={sliderRef} {...settings}>
             <div>
-              <img src={slide_image_1} alt="slide_image" />
+              <img src={slide_image_1} alt="slide_image" onDoubleClick={handleImageDoubleClick} />
             </div>
             <div>
-              <img src={slide_image_2} alt="slide_image" />
+              <img src={slide_image_2} alt="slide_image" onDoubleClick={handleImageDoubleClick} />
             </div>
             <div>
-              <img src={slide_image_3} alt="slide_image" />
+              <img src={slide_image_3} alt="slide_image" onDoubleClick={handleImageDoubleClick} />
             </div>
             <div>
-              <img src={slide_image_4} alt="slide_image" />
+              <img src={slide_image_4} alt="slide_image" onDoubleClick={handleImageDoubleClick} />
             </div>
             <div>
-              <img src={slide_image_5} alt="slide_image" />
+              <img src={slide_image_5} alt="slide_image" onDoubleClick={handleImageDoubleClick} />
             </div>
           </Slider>
         </div>

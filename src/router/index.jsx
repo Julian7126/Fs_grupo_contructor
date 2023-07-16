@@ -1,5 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import { createHashRouter, RouterProvider } from 'react-router-dom';
+
 import Root from '../components/Root';
 import ItemListProyects from '../container/ItemListProyects';
 import SobreNosotros from '../container/SobreNosotros';
@@ -8,6 +10,7 @@ import Contacto from '../container/Contacto';
 import Colaboradores from '../container/Colaboradores';
 
 const router = createBrowserRouter([
+  //cambiar a createHashRouter
   {
     path: '/',
     element: <Root />,
