@@ -42,13 +42,14 @@ button.button:hover {
 .container_button_app {
   height: 50px;
   width: 100%;
-  background-color: rgb(158, 33, 33);
-  margin-block-end: 5px;
+ background-image: url(../../assets/Marmol3.jpg);
+  margin-block-end: 1px;
   display: none; // Ocultamos por defecto en pantallas mayores a 765px
 }
 
 .button_app {
   color: white;
+  left: 10px;
 }
 
 // Estilos para pantallas pequeñas

@@ -4,8 +4,6 @@ import './styles.scss';
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
-
 const EnviarMail = ({ closeModal }) => {
   const refForm = useRef();
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -41,42 +39,34 @@ const EnviarMail = ({ closeModal }) => {
     <>
       <div className="container_de_todo_contacto">
         <FontAwesomeIcon
-            icon={faTimes}
-            className="close-icon"
-            onClick={closeModal}
-          />
+          icon={faTimes}
+          className="close-icon"
+          onClick={closeModal}
+        />
         <div className="container_contact">
-
-
           <div className="Titulo_form_contact">
             <h1>¿TE GUSTARIA PONERTE EN CONTACTO?</h1>
           </div>
 
           <form ref={refForm} action="" onSubmit={handleSubmit}>
             <fieldset>
-              <label htmlFor="">N O M B R E</label>
-              <input name="username" type="text" placeholder="" required />
+              <label htmlFor="username">N O M B R E</label>
+              <input name="username" id="username" type="text" placeholder="" required />
             </fieldset>
 
             <fieldset>
-              <label htmlFor="" name="email">
-                E M A I L
-              </label>
+              <label htmlFor="email">E M A I L</label>
               <input name="email" id="email" type="email" placeholder="" required />
             </fieldset>
 
             <fieldset>
-              <label htmlFor="" name="phone">
-                T E L E F O N O
-              </label>
-              <input name="phone" id="" type="text" placeholder="" required />
+              <label htmlFor="phone">T E L E F O N O</label>
+              <input name="phone" id="phone" type="text" placeholder="" required />
             </fieldset>
 
             <fieldset>
-              <label htmlFor="" name="message">
-                M E N S A J E 
-              </label>
-              <textarea maxLength="800" name="message" id="" type="text" placeholder="Cuéntanos un poco más" cols="110" rows="5" required />
+              <label htmlFor="message">M E N S A J E</label>
+              <textarea maxLength="800" name="message" id="message" placeholder="Cuéntanos un poco más" cols="110" rows="5" required />
             </fieldset>
 
             <button type="submit">Enviar</button>
@@ -101,7 +91,6 @@ const EnviarMail = ({ closeModal }) => {
           )}
         </div>
       </div>
-
     </>
   );
 };
