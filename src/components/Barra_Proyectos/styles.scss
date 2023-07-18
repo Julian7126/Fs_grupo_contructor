@@ -5,14 +5,15 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  margin: 20px;
+  margin: 5px;
   margin-block-end: 5px;
+  background-color: rgb(255, 255, 255);
 }
 
-.row.justify-content-end > div {
-  margin-top: 15px;
-  margin-block-end: 15px;
-  margin-right: -60px; /* Ajusta el valor según tus necesidades */
+.row.justify-content-start > div {
+  margin-top: auto;
+  margin-block-end: auto;
+  margin-left: -60px; /* Ajusta el valor según tus necesidades */
 }
 
 button.button_barra {
@@ -37,9 +38,9 @@ button.button_barra:hover {
 }
 
 .img_logo {
-  height: 80px;
-  width: 140px;
-  margin-right: 10px; /* Ajusta el valor según tus necesidades */
+  height: 90px;
+  width: 160px;
+  margin: auto; /* Ajusta el valor según tus necesidades */
 }
 
 /* Media query para dispositivos móviles */
@@ -51,14 +52,14 @@ button.button_barra:hover {
     padding: 10px;
   }
 
-  .row.justify-content-end {
+  .row.justify-content-start {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .row.justify-content-end > div {
+  .row.justify-content-start > div {
     margin-top: 10px;
     margin-block-end: 0;
-    margin-right: 0;
+    margin-left: 0;
   }
 }

@@ -16,7 +16,7 @@ const Proyects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="col-md-6 col-lg-6 mb-4"
+            className="col-md-6 col-lg-6 mb-2"
             onClick={() => handleProjectClick(project.id)}
           >
             <img src={project.image} alt="" className="img-fluid img-thumbnail" />

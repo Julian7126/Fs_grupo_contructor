@@ -10,6 +10,9 @@ const Root = () => {
 
   return (
     <>
+    <div className="enternos">
+
+
       <AnimatePresence mode="wait">
         <m.div
           key={location.pathname}
@@ -17,12 +20,13 @@ const Root = () => {
           animate={{ opacity: 1}}
           transition={{ duration: 0.3 }}
           exit={{ opacity: 1 , y: 1000 }}
-        >
+          >
           <NavBar />
 
           <Outlet />
         </m.div>
       </AnimatePresence>
+          </div>
     </>
   );
 };
