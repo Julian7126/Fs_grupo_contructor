@@ -8,6 +8,7 @@ import { useSpring, animated, config } from "react-spring";
 import { motion } from "framer-motion";
 import LargeImageOverlay from "../../components/LargeImageOverlay";
 import Footer from "../../components/Footer";
+import images from "../../assets/img";
 
 const ProyectsDetail = () => {
   const { id } = useParams();
@@ -172,8 +173,8 @@ const ProyectsDetail = () => {
         />
       )}
 
-      <div className="imgen_logo_detail">
-        <img src="" alt="" />
+      <div className="imagen_logo_detail">
+        <img className="imagen_logo" src={images.imgLogo}alt="Logo" />
       </div>
 
       <Footer />
