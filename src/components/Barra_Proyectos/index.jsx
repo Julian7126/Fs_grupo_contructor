@@ -16,13 +16,13 @@ const ProyectosNavegador = ({ onTabChange }) => {
           <div className="col-lg-8 col-md-8 col-sm-12">
             <div className="row justify-content-end">
               <div className="col-lg-4 col-md-4 col-sm-4">
-                <button className='button_barra' onClick={() => onTabChange("proyects")}>F I N A L I Z A D O S</button>
+                <button className='button_barra' onClick={() => onTabChange("proyects")}>C O N T R U C C I O N</button>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-4">
-                <button className='button_barra' onClick={() => onTabChange("inProgress")}>E N - P R O G R E S O</button>
+                <button className='button_barra' onClick={() => onTabChange("inProgress")}>R E M O D E L A C I O N</button>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-4">
-                <button className='button_barra' onClick={() => onTabChange("proyectsVarios")}>V A R I O S</button>
+                <button className='button_barra' onClick={() => onTabChange("proyectsVarios")}>I N S P E C C I O N</button>
               </div>
             </div>
           </div>

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./styles.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import projects from "../../projectData";
+import projectsRemodelacion from "../../projectsInProgress";
+import projectsVarios from "../../projectsVarios";
 import { useParams } from "react-router-dom";
 import { Container, Image, Col, Row } from "react-bootstrap";
 import { useSpring, animated, config } from "react-spring";
@@ -12,7 +14,13 @@ import images from "../../assets/img";
 
 const ProyectsDetail = () => {
   const { id } = useParams();
-  const project = projects.find((project) => project.id === parseInt(id));
+
+  // Combina los proyectos de todas las secciones en un solo array
+  const allProjects = [...projects, ...projectsRemodelacion, ...projectsVarios];
+
+  // Busca el proyecto con el id correspondiente en el array combinado
+  const project = allProjects.find((project) => project.id === parseInt(id));
+
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [showProjectInfo, setShowProjectInfo] = useState(false);
   const [showLargeImage, setShowLargeImage] = useState(false);
@@ -22,7 +30,6 @@ const ProyectsDetail = () => {
   const handleImageLoad = () => {
     setIsImageLoaded(true);
   };
-
   const handleToggleProjectInfo = () => {
     setShowProjectInfo(!showProjectInfo);
   };

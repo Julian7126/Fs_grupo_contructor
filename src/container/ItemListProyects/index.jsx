@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ProyectosNavegador from "../../components/Barra_Proyectos";
 import Proyects from "../../components/Proyects";
 import ProyectsInProgress from "../../components/ProyectsInProgress";
-import ProyectsVarios from "../../components/ProyectsVarios/index";
+import ProyectsVarios from "../../components/ProyectsVarios";
 
 const ItemListProyects = () => {
   const [activeTab, setActiveTab] = useState("proyects");
@@ -35,20 +35,20 @@ const ItemListProyects = () => {
               initial={{ opacity: 0, y: 400 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.5}}
+              transition={{ duration: 0.5 }}
             >
               <ProyectsInProgress />
             </motion.div>
           )}
-           {activeTab === "proyectsVarios" && (
+          {activeTab === "proyectsVarios" && (
             <motion.div
               key="proyectsVarios"
               initial={{ opacity: 0, y: 400 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.5}}
+              transition={{ duration: 0.5 }}
             >
-              <ProyectsVarios/>
+              <ProyectsVarios />
             </motion.div>
           )}
         </AnimatePresence>

@@ -3,8 +3,8 @@ import lara1 from "./ApartamentosLara1.jpg"
 import lara2 from "./ApartamentosLara2.jpg"
 import aPYW from "./ApartamentosPYW.jpg"
 import CasaGarita1 from "./CasaGarita.jpg"
-import casaH1 from "./CasaH.jpg"
-import casaHR from "./CasaHRemodelacion.jpg"
+import casaH1 from "./ResidenciaH10/CasaH.jpg"
+import casaHR from "./ResidenciaH10/CasaHRemodelacion.jpg"
 import ciudadMujer1 from "./CiudadMujer1.jpg"
 import ciudadMujer2 from "./CiudadMujer2.png.jpg"
 import ciudadMujer3 from "./CiudadMujer3.jpg"
@@ -34,6 +34,7 @@ import pinillaBack2 from "../assets/Pinilla/back2.jpg"
 import pinillaRight from "../assets/Pinilla/right.jpg"
 import pinillaElevacion from "../assets/Pinilla/ElevacionIzquierda.jpg"
 import pinillaElevacion2 from "../assets/Pinilla/elevacionDerecha.jpg"
+import ejemplo  from "../assets/ejemplo.jpg"
 
 
 
@@ -78,6 +79,7 @@ ImgGymM2 : gymM2,
 Imghaciendoespavel: haciendoespavel,
 ImgiluminasionGimnasioSanRafael: iluminasionGimnasioSanRafael,
 multira: multi,
+ejemplo: ejemplo,
 
 
 
