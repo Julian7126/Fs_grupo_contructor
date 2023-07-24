@@ -73,6 +73,11 @@ const NuevoSlider = () => {
               <img src={slide_image_5} alt="slide_image" onDoubleClick={handleImageDoubleClick} />
             </div>
           </Slider>
+          {window.innerWidth > 767 ? (
+            <div className="slider-legend top-legend">Double-click to Enter</div>
+          ) : (
+            <div className="slider-legend bottom-legend">Ingrese con Double-click</div>
+          )}
         </div>
       ) : (
         <Router />

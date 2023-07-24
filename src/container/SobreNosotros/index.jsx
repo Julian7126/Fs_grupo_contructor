@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import './styles.scss';
-import YouTubeVideo from '../../assets/Youtube';
+import YouTubeVideo from '../../assets/YoutubeSobreNosotros';
 import Footer from "../../components/Footer/index"
 import 'bootstrap/dist/css/bootstrap.min.css';
 

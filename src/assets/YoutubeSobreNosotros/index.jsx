@@ -32,10 +32,10 @@ const YouTubeVideo = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/9LeaHG_tl4Y?autoplay=1"
+              src="https://www.youtube.com/embed/9LeaHG_tl4Y"  // Eliminamos el parámetro autoplay=1 de la URL
               title="YouTube video player"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" // También puedes eliminar el atributo allow="autoplay" para mayor seguridad
               allowFullScreen
               onLoad={() => setVideoLoaded(true)}
             ></iframe>

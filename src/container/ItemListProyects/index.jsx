@@ -5,6 +5,7 @@ import ProyectosNavegador from "../../components/Barra_Proyectos";
 import Proyects from "../../components/Proyects";
 import ProyectsInProgress from "../../components/ProyectsInProgress";
 import ProyectsVarios from "../../components/ProyectsVarios";
+import ProyectsTransporte from "../../components/ProyectsTransporte";
 
 const ItemListProyects = () => {
   const [activeTab, setActiveTab] = useState("proyects");
@@ -49,6 +50,17 @@ const ItemListProyects = () => {
               transition={{ duration: 0.5 }}
             >
               <ProyectsVarios />
+            </motion.div>
+          )}
+          {activeTab === "proyectsTransporte" && (
+            <motion.div
+              key="proyectsTransporte"
+              initial={{ opacity: 0, y: 400 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.5 }}
+            >
+              <ProyectsTransporte/>
             </motion.div>
           )}
         </AnimatePresence>

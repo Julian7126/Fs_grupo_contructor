@@ -4,6 +4,7 @@
   align-items: center;
   height: 712px;
   background: url("../../assets/Marmol.jpg") center/cover no-repeat;
+  position: relative;
 }
 
 .slider-container {
@@ -106,6 +107,36 @@
   display: block;
   height: auto;
   border: 1px solid transparent;
+}
+
+.slider-legend {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(250, 250, 250);
+  background-color: rgba(155, 153, 153, 0.7);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.top-legend {
+  top: 0;
+  width: 15%;
+border-radius: 10px;
+}
+
+.bottom-legend {
+  bottom: 0;
+}
+
+.container-modal:hover .slider-legend {
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
