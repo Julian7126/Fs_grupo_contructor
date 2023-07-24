@@ -1,9 +1,10 @@
+// Contacto.js
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarker, faClock } from '@fortawesome/free-solid-svg-icons';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import "./styles.scss";
-import Footer from "../../components/Footer"
+import Footer from "../../components/Footer";
 import YoutubeMarcela from '../../assets/YoutubeMarcela';
 
 const Contacto = () => {
@@ -12,19 +13,10 @@ const Contacto = () => {
       <div className="contacto_container">
         {/* Contenedor del Spline */}
         <div className="video_container">
-          <YoutubeMarcela />
+          <div className="ratio-16x9">
+            <YoutubeMarcela />
+          </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
 
         {/* Contenedor de la información de contacto */}
         <div className="contact_info_container">
@@ -75,8 +67,7 @@ const Contacto = () => {
           </div>
         </div>
       </div>
-
-      <Footer/>
+      <Footer />
     </>
   );
 }

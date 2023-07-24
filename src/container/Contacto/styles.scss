@@ -1,10 +1,10 @@
-// styles.scss
 @import "~@fortawesome/fontawesome-svg-core/styles.css";
 
 .contacto_container {
   display: flex;
   flex-direction: row;
   background-image: url(../../assets/Marmol.jpg);
+  height: 650px;
 
   @media screen and (max-width: 765px) {
     flex-direction: column;
@@ -14,13 +14,13 @@
 }
 
 .video_container {
-  width: 50%;
-  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
- background-color: grey;
- text-align: center;
- 
+  background-color: rgb(184, 183, 183);
+  text-align: center;
+  width: 50%;
+  position: relative;
 
   @media screen and (max-width: 765px) {
     width: 100%;
@@ -32,7 +32,6 @@
     height: 400px;
     padding-bottom: 12.25%; /* Aspect ratio 16:9 */
     position: relative;
-
     margin-block-end: 40px;
     border-radius: 20px;
 
@@ -45,7 +44,7 @@
 }
 
 .contact_info_container {
-
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px;
