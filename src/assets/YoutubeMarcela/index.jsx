@@ -27,7 +27,7 @@ const YoutubeMarcela = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube-nocookie.com/embed/bP6iDopIYmQ" // Modifica la URL aquí
+              src="https://www.youtube.com/embed/3bYrGEJA8Z4" // Modifica la URL aquí
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
