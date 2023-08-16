@@ -44,7 +44,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "Casa Luna Doblada",
+    name: "Casa Luna Nublada",
     image: images.ejemplo,
     tamaño: "170 m²",
     location: "Santana San Jose",
