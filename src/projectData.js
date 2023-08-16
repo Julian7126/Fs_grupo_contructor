@@ -14,15 +14,33 @@ const projects = [
     render3: images.imgRightPinilla,
     render4: images.imgElevacionPinilla,
     render5: images.imgElevacion2Pinilla,
+    contruccion1: images.imgPinillaContruccion1,
+    contruccion2:images.imgPinillaContruccion2,
+    contruccion3:images.imgPinillaContruccion3,
+    contruccion4:images.imgPinillaContruccion4,
+    contruccion5:images.imgPinillaContruccion5,
+    contruccion6:images.imgPinillaContruccion6,
+    finalizados1:images.imgPinillaFinalizados1,
+    finalizados2:images.imgPinillaFinalizados2,
+    finalizados3:images.imgPinillaFinalizados3,
+
+    
+
   },
   {
     id: 2,
     name: "Residencia H10",
-    image: images.ImgResidenciaH10,
+    image: images.imgh10,
     tamaño: "660 m²",
     location: "Santana San Jose",
     address: "Eco Residencial Villareal",
     category: "Edificación",
+    contruccion1: images.imgh10contruccion1,
+    contruccion2:images.imgh10contruccion2,
+    contruccion3:images.imgh10contruccion3,
+    contruccion4:images.imgh10contruccion4,
+    contruccion5:images.imgh10contruccion5,
+    contruccion6:images.imgh10contruccion6,
   },
   {
     id: 3,
@@ -63,11 +81,25 @@ const projects = [
   {
     id: 7,
     name: "Casa Pablo y Wendy",
-    image: images.ejemplo,
+    image: images.imgPabloWendy,
     tamaño: "60 m²",
     location: "San Isidro Heredia",
     address: "Urbanizacion",
     category: "Edificación",
+    contruccion1: images.ImgPWContruccion1,
+    contruccion2:images.ImgPWContruccion2,
+    contruccion3:images.ImgPWContruccion3,
+    contruccion4:images.ImgPWContruccion4,
+    contruccion5:images.ImgPWContruccion5,
+    contruccion6:images.ImgPWContruccion6,
+    finalizados1:images.ImgPWFinalizado1,
+    finalizados2:images.ImgPWFinalizado2,
+    finalizados3:images.ImgPWFinalizado3,
+
+
+
+
+
   },
   {
     id: 8,

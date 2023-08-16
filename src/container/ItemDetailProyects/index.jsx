@@ -203,7 +203,118 @@ const ProyectsDetail = () => {
           )}
         </Row>
         <h1 className="titulos">C O N S T R U C C I O N</h1>
+
+        <Row className="contenedor_row justify-content-center">
+          {project.contruccion1 && (
+            <Col md={5} sm={12} className="mb-4">
+              <Image
+                src={project.contruccion1}
+                alt={project.name}
+                fluid
+                onClick={() => handleImageClick(project.contruccion1, "image2")}
+                style={{ cursor: "pointer" }}
+              />
+            </Col>
+          )}
+          {project.contruccion2 && (
+            <Col md={5} sm={12} className="mb-4">
+              <Image
+                src={project.contruccion2}
+                alt={project.name}
+                fluid
+                onClick={() => handleImageClick(project.contruccion2, "image3")}
+                style={{ cursor: "pointer" }}
+              />
+            </Col>
+          )}
+          {project.contruccion3 && (
+            <Col md={5} sm={12} className="mb-4">
+              <Image
+                src={project.contruccion3}
+                alt={project.name}
+                fluid
+                onClick={() => handleImageClick(project.contruccion3, "image4")}
+                style={{ cursor: "pointer" }}
+              />
+            </Col>
+          )}
+          {project.contruccion4 && (
+            <Col md={5} sm={12} className="mb-4">
+              <Image
+                src={project.contruccion4}
+                alt={project.name}
+                fluid
+                onClick={() => handleImageClick(project.contruccion4, "image5")}
+                style={{ cursor: "pointer" }}
+              />
+            </Col>
+          )}
+          {project.contruccion5 && (
+            <Col md={5} sm={12} className="mb-4">
+              <Image
+                src={project.contruccion5}
+                alt={project.name}
+                fluid
+                onClick={() => handleImageClick(project.contruccion5, "image6")}
+                style={{ cursor: "pointer" }}
+              />
+            </Col>
+          )}
+            {project.contruccion6 && (
+            <Col md={5} sm={12} className="mb-4">
+              <Image
+                src={project.contruccion6}
+                alt={project.name}
+                fluid
+                onClick={() => handleImageClick(project.contruccion6, "image6")}
+                style={{ cursor: "pointer" }}
+              />
+            </Col>
+          )}
+        </Row>
+
+
+
+
+        
         <h1 className="titulos">F I N A L I Z A D O</h1>
+        
+        <Row className="contenedor_row justify-content-center">
+          {project.finalizados1 && (
+            <Col md={5} sm={12} className="mb-4">
+              <Image
+                src={project.finalizados1}
+                alt={project.name}
+                fluid
+                onClick={() => handleImageClick(project.finalizados1, "image2")}
+                style={{ cursor: "pointer" }}
+              />
+            </Col>
+          )}
+          {project.finalizados2 && (
+            <Col md={5} sm={12} className="mb-4">
+              <Image
+                src={project.finalizados2}
+                alt={project.name}
+                fluid
+                onClick={() => handleImageClick(project.finalizados2, "image3")}
+                style={{ cursor: "pointer" }}
+              />
+            </Col>
+          )}
+          {project.finalizados3 && (
+            <Col md={5} sm={12} className="mb-4">
+              <Image
+                src={project.finalizados3}
+                alt={project.name}
+                fluid
+                onClick={() => handleImageClick(project.finalizados3, "image4")}
+                style={{ cursor: "pointer" }}
+              />
+            </Col>
+          )}
+        </Row>
+        
       </>
     )}
   </Container>

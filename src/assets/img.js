@@ -1,39 +1,54 @@
 import logo from "./FsGrupo.png"
-import lara1 from "./ApartamentosLara1.jpg"
-import lara2 from "./ApartamentosLara2.jpg"
-import aPYW from "./ApartamentosPYW.jpg"
-import CasaGarita1 from "./CasaGarita.jpg"
-import casaH1 from "./ResidenciaH10/CasaH.jpg"
-import casaHR from "./ResidenciaH10/CasaHRemodelacion.jpg"
-import ciudadMujer1 from "./CiudadMujer1.jpg"
-import ciudadMujer2 from "./CiudadMujer2.png.jpg"
-import ciudadMujer3 from "./CiudadMujer3.jpg"
-import concretoArmado1 from "./ConcretoArmado.jpg"
-import electromecanica from "./Electromecanica.jpg"
-import oficinas1 from "./Oficinas1.jpg"
-import oficinas2 from "./Oficinas2.jpg"
-import psicina from "./Psicina.jpg"
-import entrepisos from "./EntrePisos.jpg"
-import mallOxigenoPsicina from "./MallOxigenoPiscina.jpg"
-import mallOxigenoSupresion from "./MallOxigenoSupresion.jpg"
-import movimientoDeTierra from "./MovimientoDeTierra.jpg"
 
-import residenciaH10 from "./ResidenciaH10.jpg"
-import techosVerdes from "./TechosVerdes.jpg"
-import trabajoEnAltura from "./TrabajoEnAltura.jpg"
-import terraza from "./Terraza.jpg"
-import losaDeFundacion from "./LosasDeFundacionResidenciaHeredia.jpg"
-import gymM from "./GimnasioMultiusosCOLYPRO.jpg"
-import gymM2 from "./GimnasioMultiusosCOLYPRO2.jpg"
-import haciendoespavel from "./HaciendoEspavel.jpg"
-import iluminasionGimnasioSanRafael from "./IluminasionGimnasioSanRafael.jpg"
+
+
+
 import multi from "./multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg"
-import pinilla from "../assets/Pinilla/Front.jpg"
-import pinillaBack1 from "../assets/Pinilla/back.jpg"
+
+
+
+// pinilla
+import pinilla from "../assets/Pinilla/Imagen Principal Pinilla.jpg"
+import pinillaRender1 from "../assets/Pinilla/back.jpg"
 import pinillaBack2 from "../assets/Pinilla/back2.jpg"
 import pinillaRight from "../assets/Pinilla/right.jpg"
 import pinillaElevacion from "../assets/Pinilla/ElevacionIzquierda.jpg"
 import pinillaElevacion2 from "../assets/Pinilla/elevacionDerecha.jpg"
+import pinillaContruccion1 from "../assets/Pinilla/prueba.jpg"
+import pinillaContruccion2 from "../assets/Pinilla/Construccion2.jpg"
+import pinillaContruccion3 from "../assets/Pinilla/Construccion3.jpg"
+import pinillaContruccion4 from "../assets/Pinilla/Construccion4.jpg"
+import pinillaContruccion5 from "../assets/Pinilla/Construccion5.jpg"
+import pinillaContruccion6 from "../assets/Pinilla/Construccion6.jpg"
+import pinillaFinalizados1 from "../assets/Pinilla/Finalizados1.jpg"
+import pinillaFinalizados2 from "../assets/Pinilla/Finalizados2.jpg"
+import pinillaFinalizados3 from "../assets/Pinilla/Finalizados3.jpg"
+
+
+//casah10
+import h10 from "../assets/ResidenciaH10/h10principal.jpg"
+import construccion1 from "../assets/ResidenciaH10/Construccion1.jpg"
+import construccion2 from "../assets/ResidenciaH10/Construccion2.jpg"
+import construccion3 from "../assets/ResidenciaH10/Construccion3.jpg"
+import construccion4 from "../assets/ResidenciaH10/Construccion4.jpg"
+import construccion5 from "../assets/ResidenciaH10/Construccion5.jpg"
+import construccion6 from "../assets/ResidenciaH10/Construccion6.jpg"
+
+//Casa Pablo y WENDY
+
+import pabloYWendy from "../assets/CASA PABLO Y WENDY/CasaPabloYWendyPrincipal.jpg"
+import pwconstruccion1 from "../assets/CASA PABLO Y WENDY/Construccion1.jpg"
+import pwconstruccion2 from "../assets/CASA PABLO Y WENDY/Construccion2.jpg"
+import pwconstruccion3 from "../assets/CASA PABLO Y WENDY/Construccion3.jpg"
+import pwconstruccion4 from "../assets/CASA PABLO Y WENDY/Construccion4.jpg"
+import pwconstruccion5 from "../assets/CASA PABLO Y WENDY/Construccion5.jpg"
+import pwconstruccion6 from "../assets/CASA PABLO Y WENDY/Construccion6.jpg"
+import pwFinalizados1 from "../assets/CASA PABLO Y WENDY/Finalizado1.jpg"
+import pwFinalizados2 from "../assets/CASA PABLO Y WENDY/Finalizado2.jpg"
+import pwFinalizados3 from "../assets/CASA PABLO Y WENDY/Finalizado3.jpg"
+
+
+
 import ejemplo  from "../assets/ejemplo.jpg"
 
 
@@ -43,41 +58,61 @@ import ejemplo  from "../assets/ejemplo.jpg"
 
 
 const images = {
+    //Logo
 
 imgLogo: logo,
+
+
 imgFrontPinilla: pinilla,
-imgBackPinilla: pinillaBack1,
+imgBackPinilla: pinillaRender1,
 imgBack2Pinilla: pinillaBack2,
 imgRightPinilla: pinillaRight,
 imgElevacionPinilla: pinillaElevacion,
 imgElevacion2Pinilla: pinillaElevacion2,
-imgLara1: lara1,
-imgLara2: lara2,
-imgaPYW: aPYW,
-imgCasaGarita1: CasaGarita1,
-Casah1 : casaH1,
-CasaHRemodelacion: casaHR,
-imgCiudadMujer1: ciudadMujer1,
-imgCiudadMujer2:ciudadMujer2,
-imgCiudadMujer3:ciudadMujer3,
-imgConcretoArmado1: concretoArmado1,
-imgElectroMecanica1: electromecanica,
-imgOficinas1 : oficinas1,
-imgOficinas2 : oficinas2,
-imgPsicina: psicina,
-imgEntrePisos: entrepisos,
-ImgMallOxigenoPsicina: mallOxigenoPsicina,
-ImgmallOxigenoSupresion:mallOxigenoSupresion,
-ImgmovimientoDeTierra: movimientoDeTierra,
-ImgResidenciaH10: residenciaH10,
-ImgtechosVerdes: techosVerdes,
-ImgtrabajoEnAltura: trabajoEnAltura,
-Imgterraza: terraza,
-ImglosaDeFundacion: losaDeFundacion,
-ImgGymM: gymM,
-ImgGymM2 : gymM2,
-Imghaciendoespavel: haciendoespavel,
-ImgiluminasionGimnasioSanRafael: iluminasionGimnasioSanRafael,
+imgPinillaContruccion1:pinillaContruccion1,
+imgPinillaContruccion2:pinillaContruccion2,
+imgPinillaContruccion3:pinillaContruccion3,
+imgPinillaContruccion4:pinillaContruccion4,
+imgPinillaContruccion5:pinillaContruccion5,
+imgPinillaContruccion6:pinillaContruccion6,
+imgPinillaFinalizados1:pinillaFinalizados1,
+imgPinillaFinalizados2:pinillaFinalizados2,
+imgPinillaFinalizados3:pinillaFinalizados3,
+
+
+
+//residencia h10
+
+imgh10:h10,
+imgh10contruccion1:construccion1,
+imgh10contruccion2:construccion2,
+imgh10contruccion3:construccion3,
+imgh10contruccion4:construccion4,
+imgh10contruccion5:construccion5,
+imgh10contruccion6:construccion6,
+
+
+//Casa Pablo y Wendy
+imgPabloWendy:pabloYWendy,
+ImgPWContruccion1: pwconstruccion1,
+ImgPWContruccion2: pwconstruccion2,
+ImgPWContruccion3: pwconstruccion3,
+ImgPWContruccion4: pwconstruccion4,
+ImgPWContruccion5: pwconstruccion5,
+ImgPWContruccion6: pwconstruccion6,
+ImgPWFinalizado1:pwFinalizados1,
+ImgPWFinalizado2:pwFinalizados2,
+ImgPWFinalizado3:pwFinalizados3,
+
+
+
+
+
+
+
+
+
+
 multira: multi,
 ejemplo: ejemplo,
 
