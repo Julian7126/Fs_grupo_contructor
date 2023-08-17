@@ -6,6 +6,7 @@ import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import "./styles.scss";
 import Footer from "../../components/Footer";
 import YoutubeMarcela from '../../assets/YoutubeMarcela';
+import images from '../../assets/img';
 
 const Contacto = () => {
   return (
@@ -25,7 +26,9 @@ const Contacto = () => {
             <FontAwesomeIcon icon={faUser} className="contact_icon" />
             <div>
               <p className="contact_title">INGENIERO FABIAN SALAS JIMENEZ</p>
+              <hr />
               <p className="contact_description">CORREO: info@fsgrupoconstructor.com</p>
+              <hr />
               <p className="contact_description">+506 8924-9056</p>
             </div>
           </div>
@@ -35,7 +38,10 @@ const Contacto = () => {
             <FontAwesomeIcon icon={faShoppingCart} className="contact_icon" />
             <div>
               <p className="contact_title">PROVEEDURÍA</p>
+              <hr />
               <p className="contact_description">MARIA JOSE</p>
+              <hr />
+              <p className="contact_description">mjmontero@fsgccr.com</p>
             </div>
           </div>
 
@@ -44,7 +50,7 @@ const Contacto = () => {
             <FontAwesomeIcon icon={faMapMarker} className="contact_icon" />
             <div>
               <p className="contact_title">DIRECCIÓN DE OFICINA</p>
-              <p className="contact_description">HEREIDA Y LITORA</p>
+              <p className="contact_description">Tropical Studios, La Paco , Escasu - San jose </p>
             </div>
           </div>
 
@@ -53,7 +59,7 @@ const Contacto = () => {
             <FontAwesomeIcon icon={faMapMarker} className="contact_icon" />
             <div>
               <p className="contact_title">DIRECCIÓN DE BODEGA</p>
-              <p className="contact_description">--------------</p>
+              <p className="contact_description">Aqui kabe - La Valencia Heredia </p>
             </div>
           </div>
 
@@ -66,6 +72,9 @@ const Contacto = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="imagen_logo_detail">
+        <img className="imagen_logo" src={images.imgLogo}alt="Logo" />
       </div>
       <Footer />
     </>
