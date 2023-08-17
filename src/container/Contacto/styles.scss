@@ -51,11 +51,13 @@
   justify-content: space-between; // Distribuye los elementos uniformemente
   height: 100%; // Asegura que el contenedor ocupe toda la altura disponible
 
-
   @media screen and (max-width: 765px) {
-    padding: 20px 0;
+    padding: 70px;
+    margin-top: 400px; // Agrega margen superior para separación
+    margin-bottom: 20px; // Agrega margen inferior para separación
   }
 }
+
 
 .contact_point {
   display: flex;
