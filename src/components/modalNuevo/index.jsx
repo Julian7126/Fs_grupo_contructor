@@ -7,7 +7,7 @@ import "./styles.scss";
 
 import slide_image_1 from "../../assets/FsGrupo.png";
 import slide_image_2 from "../../assets/ArquitecturaEdit.jpg";
-import slide_image_3 from "../../assets/DiseñoEdit.jpg";
+import slide_image_3 from "../../assets/DisenoEdit.jpg"
 import slide_image_4 from "../../assets/AdministracionEdit.jpg";
 import slide_image_5 from "../../assets/ControlEdit.jpg";
 
