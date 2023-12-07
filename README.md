@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+## FS Grupo Constructor - Página Web
+Descripción
+Este proyecto es una página web desarrollada en React para FS Grupo Constructor, una empresa de construcción en Costa Rica. El objetivo principal es proporcionar una plataforma online en la que la empresa pueda mostrar sus servicios y proyectos de manera profesional y eficaz.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto se desarrolló como parte de un trabajo freelance con el objetivo de ayudar a la empresa a establecer una sólida presencia en línea.
 
-## Available Scripts
+Tecnologías Utilizadas
+Principales
+React.js
+Node.js
+CSS/SASS
+Dependencias
+EmailJS para envío de correos electrónicos
+Font Awesome para íconos
+React Three Fiber y Three.js para gráficos 3D
+AOS para animaciones al hacer scroll
+Bootstrap y React-Bootstrap para el diseño de la interfaz
+Framer Motion para animaciones avanzadas
+GSAP para animaciones de alto rendimiento
+React Router Dom para el enrutamiento
+Styled-components para estilos con componentes
+Y muchas más (ver package.json para una lista completa)
+Cómo comenzar
+Prerrequisitos
+Node.js
+npm
+Instalación
+Clona el repositorio
 
-In the project directory, you can run:
+sh
+Copy code
+git clone https://github.com/tu_usuario/fsgrupoconstructor.git
+Navega al directorio del proyecto
 
-### `npm start`
+sh
+Copy code
+cd fsgrupoconstructor
+Instala las dependencias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+sh
+Copy code
+npm install
+Inicia el proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+sh
+Copy code
+npm start
+Ahora, navega a http://localhost:3000 para ver el proyecto en acción.
 
-### `npm test`
+Características
+Presentación de proyectos anteriores y en curso
+Detalle de los servicios ofrecidos
+Sección de contacto
+Animaciones y gráficos 3D para una mejor experiencia de usuario
+Contribuir
+Si tienes alguna mejora o característica que te gustaría añadir, siéntete libre de hacer un pull request o abrir un issue.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Autor
+[JULIAN BISCHOFF]
