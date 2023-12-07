@@ -6,11 +6,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Spline = lazy(() => import('@splinetool/react-spline'));
 
+const Loader = () => (
+  <div className="loader-container">
+  <div className="loader"></div>
+  <p>Cargando...</p>
+</div>
+);
+
 const SobreNosotros = () => {
   return (
     <div className="contenedor-main-sobre-nosotros">
       <div className="contenedor_de_splider">
-        <Suspense fallback={<div>Cargando...</div>}>
+        <Suspense fallback={<Loader />}>
           <Spline className="splider" scene="https://prod.spline.design/0ktatEhVFk4sNSKw/scene.splinecode" />
         </Suspense>
       </div>
@@ -28,7 +35,6 @@ const SobreNosotros = () => {
       </div>
       <YouTubeVideo />
       <Footer/>
-      
     </div>
   );
 };

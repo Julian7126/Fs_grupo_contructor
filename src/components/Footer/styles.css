@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "~bootstrap/dist/css/bootstrap.min.css";
 .main-footer {
   height: 45px;
@@ -5,33 +6,72 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #B7B7B7;
+  background-color: #b7b7b7;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top-right-radius: 10px;
+  margin-top: auto;
   border-top-left-radius: 10px;
 }
 
-.icon-text {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.icon-text p {
-  vertical-align: middle;
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.logo {
-  margin-left: auto;
-}
-
-.logo img {
-  height: 50px;
-  width: auto;
+.icon {
   margin-right: 10px;
+}
+
+.footer-icon {
+  color: #fff;
+  cursor: pointer;
+}
+
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  font-size: 25px;
+  text-align: center;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-icon {
+  font-size: 24px;
+  margin-bottom: 10px; /* Ajusta el espacio entre el ícono y el texto */
+}
+
+.modal-text {
+  font-size: 16px;
+  text-align: center;
+}
+
+.modal-button {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .main-footer {
+    padding: 10px;
+  }
+  .icon {
+    margin-top: 8px;
+    margin-right: 5px;
+  }
 }/*# sourceMappingURL=styles.css.map */

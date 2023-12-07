@@ -2,4 +2,8 @@
   height: 10px;
   /* Altura deseada de la barra de progreso */
   background-color: rgb(217, 136, 136); /* Color de fondo deseado */
+}
+
+.eternos {
+  background-color: red;
 }/*# sourceMappingURL=styles.css.map */

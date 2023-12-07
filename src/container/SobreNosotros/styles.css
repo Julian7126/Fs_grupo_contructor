@@ -1,1 +1,134 @@
-/*# sourceMappingURL=styles.css.map */
+.contenedor-main-sobre-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contenedor_de_splider {
+  display: flex;
+  flex: 1 1 50%;
+  height: 600px;
+  overflow: auto;
+}
+
+.splider {
+  height: 400px;
+  width: 100%;
+  background-image: url("../../assets/Marmol.jpg");
+}
+
+.contenedor-mision,
+.contenedor-vision {
+  flex: 1 1 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.contenedor-vision {
+  background-color: #e0e0e0;
+  font-size: 14px;
+}
+
+.mision-titulo,
+.vision-titulo {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(6, 6, 6);
+}
+
+.mision-texto,
+.vision-texto {
+  color: rgb(8, 8, 8);
+}
+
+.contenedor-filas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url("../../assets/Marmol2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fila {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.fila-texto {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  max-width: 80%;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Estilos para pantallas de celular */
+@media screen and (max-width: 760px) {
+  .contenedor-main-sobre-nosotros {
+    flex-direction: column;
+  }
+  .contenedor_de_splider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  .splider {
+    height: 300px;
+    width: 100%;
+  }
+  .contenedor-mision,
+  .contenedor-vision {
+    width: 100%;
+  }
+  .contenedor-video {
+    width: 100%;
+    height: 500px;
+  }
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=styles.css.map */

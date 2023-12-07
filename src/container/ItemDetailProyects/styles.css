@@ -1,1 +1,199 @@
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+.contenedor-principal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-image: url("../../assets/Marmol.jpg");
+}
+.contenedor-principal .contenedor-imagen {
+  width: 85%;
+  max-width: 1000px;
+  height: auto;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.contenedor-principal .contenedor-imagen img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenedor-principal .name_project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contenedor-principal .name_project .project-name {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #343333;
+  text-shadow: 1px 2px 4px rgba(226, 226, 226, 0.5);
+  text-align: center;
+}
+.contenedor-principal .project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.contenedor-principal .project-info ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.contenedor-principal .project-info li {
+  font-size: 16px;
+  color: #515151;
+  margin-bottom: 10px;
+}
+.contenedor-principal button {
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  color: #050505;
+  cursor: pointer;
+  outline: none;
+  align-self: center;
+  animation: bounce 1s infinite;
+  transform-origin: center;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-principal {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .contenedor-principal .contenedor-imagen {
+    height: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .contenedor-principal .name_project {
+    margin-bottom: 10px;
+  }
+  .contenedor-principal .project-info {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.container_secundario {
+  background-color: rgb(233, 231, 231);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .container_secundario {
+    margin: 0;
+    padding: 0;
+  }
+}
+.container_secundario .contenedor_row {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr); /* Modifica el número de columnas según tus preferencias */
+  gap: 10px; /* Ajusta el valor según tus preferencias */
+  align-items: center;
+  padding: 10px;
+  height: auto;
+}
+.container_secundario .contenedor_row .image-column {
+  height: auto;
+  width: 100%; /* Ajusta el valor según tus preferencias */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(155, 154, 154);
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  color: #474747;
+  cursor: pointer;
+  outline: none;
+  padding: 50px;
+}
+
+.large-image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.large-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.titulos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #343333;
+  text-shadow: 1px 2px 4px rgba(226, 226, 226, 0.5);
+  text-align: center;
+}
+
+.imagen_logo_detail {
+  width: 100%;
+  height: 180px;
+  background: #343333;
+  display: flex;
+}
+
+.imagen_logo {
+  width: auto;
+  height: 150px;
+  margin: 0 auto;
+}/*# sourceMappingURL=styles.css.map */

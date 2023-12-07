@@ -1,5 +1,4 @@
 .container_global {
-  background-color: transparent;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -9,6 +8,9 @@
   width: 100%;
   bottom: auto;
   font-size: 14px;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  background-image: url("../../assets/Marmol2.jpg");
 }
 
 .left_items {
@@ -20,18 +22,90 @@ button.button {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: rgb(96, 95, 95);
   transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
-  font-weight: normal;
+  font-weight: small;
+  color: #ffffff; /* Color inicial */
 }
 
 button.button:hover {
   font-weight: bold;
-  color: black;
+  color: #000; /* Cambio a color negro */
 }
 
 .right_items {
-  gap: 40px;
+  gap: 120px;
   display: flex;
   align-items: center;
+  font-size: 14px;
+}
+
+.container_button_app {
+  height: 50px;
+  width: 100%;
+  background-image: url(../../assets/Marmol3.jpg);
+  margin-block-end: 1px;
+  display: none;
+}
+
+.button_app {
+  color: white;
+  left: 10px;
+}
+
+@media (max-width: 767px) {
+  .container_global {
+    display: none;
+  }
+  .container_button_app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button_app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-weight: small;
+  }
+  .button_app:hover {
+    font-weight: bold;
+  }
+  .mobile_navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 9999;
+  }
+  .mobile_navbar button {
+    font-size: 14px;
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-weight: small;
+  }
+  .mobile_navbar button:hover {
+    font-weight: bold;
+  }
+}
+@media (min-width: 768px) {
+  .container_button_app {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

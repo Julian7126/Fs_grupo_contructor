@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.modal-content_detail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/Marmol3.jpg");
+}
+@media (max-width: 767px) {
+  .modal-content_detail {
+    /* Estilos para dispositivos móviles */
+    background-size: cover;
+    padding: 20px;
+  }
+}
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 767px) {
+  .close-icon {
+    /* Estilos para dispositivos móviles */
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.large-image_detail_container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  max-height: 800px;
+}
+@media (max-width: 767px) {
+  .large-image_detail_container {
+    /* Estilos para dispositivos móviles */
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: none;
+  }
+}
+.large-image_detail_container .large_image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=styles.css.map */

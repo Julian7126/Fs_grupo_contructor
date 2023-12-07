@@ -4,6 +4,7 @@
   overflow-y: scroll;
   scrollbar-width: thin; /* Ancho del scroll */
   scrollbar-color: rgb(0, 0, 0); /* Color del scroll */
+  background-color: rgb(233, 231, 231);
 }
 
 /* Estilos para WebKit (Safari, Chrome) */

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.contenedor-video {
+  flex: 1 50%;
+  height: 700px; /* Ajusta la altura según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Marmol3.jpg");
+}/*# sourceMappingURL=styles.css.map */
