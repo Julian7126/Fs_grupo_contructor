@@ -2,6 +2,10 @@
   background-image: url("../../assets/Marmol.jpg");
   position: relative;
   border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
 }
 
 .container_contact {
@@ -9,11 +13,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  height: 100vh;
-  margin-left: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
   background-color: #fff;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .close-icon {
@@ -26,19 +31,21 @@
 }
 
 .Titulo_form_contact {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .Titulo_form_contact h1 {
   color: #333;
+ font-size: medium; 
 }
 
 form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
+  margin: 0;
 }
 
 fieldset {
@@ -50,6 +57,7 @@ fieldset {
 fieldset label {
   margin-bottom: 5px;
   color: #333;
+  ;
 }
 
 input[type="text"],
@@ -104,11 +112,7 @@ button[type="submit"] {
 
 @media (max-width: 768px) {
   .container_contact {
-    margin-top: 10px;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    width: 90%;
   }
 
   form {
@@ -122,15 +126,6 @@ button[type="submit"] {
 
 @media (max-width: 480px) {
   .container_contact {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .Titulo_form_contact {
-    margin-bottom: 20px;
-  }
-
-  form {
     width: 90%;
   }
 }

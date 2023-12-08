@@ -12,7 +12,7 @@ const EnviarMail = ({ closeModal }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-    const serviceId = 'service_3iko0wu';
+    const serviceId = 'service_v51eubi';
     const templateId = 'template_hl6mew5';
     const apikey = 'pYgGfqlNJz6gYsyun';
 
