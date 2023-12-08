@@ -5,7 +5,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background-image: url("../../assets/Marmol3.jpg");
+  background-image: url("../../assets/Marmol2.jpg");
 
   @media (max-width: 767px) {
     /* Estilos para dispositivos móviles */
@@ -13,11 +13,10 @@
     padding: 20px;
   }
 }
-
-.close-icon {
+.close-icon-container {
   position: absolute;
   top: 20px;
-  right: 100px;
+  right: 75px;
   color: rgb(255, 255, 255);
 
   @media (max-width: 767px) {
@@ -25,7 +24,18 @@
     top: 10px;
     right: 10px;
   }
+
+  @media (min-width: 768px) {
+    /* Ajusta el ícono en dispositivos más grandes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
 }
+
 
 .large-image_detail_container {
   width: 100%;

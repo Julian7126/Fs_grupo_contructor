@@ -104,12 +104,14 @@ button[type=submit] {
 
 @media (max-width: 768px) {
   .container_contact {
-    margin-top: 20px;
+    margin-top: 10px;
+    width: 80%;
     align-items: center;
     justify-content: center;
+    gap: 20px;
   }
   form {
-    width: 80%;
+    width: 100%;
   }
   button[type=submit] {
     align-self: center;
