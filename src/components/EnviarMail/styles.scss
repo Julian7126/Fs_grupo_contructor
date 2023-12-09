@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-  
+  overflow-y: auto;
 }
 
 .container_contact {
@@ -13,11 +13,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 80%;
   max-width: 600px;
   margin: 20px auto;
   background-color: #fff;
-  padding: 2px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -37,7 +37,7 @@
 
 .Titulo_form_contact h1 {
   color: #333;
- font-size: medium; 
+  font-size: medium;
 }
 
 form {
@@ -46,7 +46,8 @@ form {
   align-items: center;
   width: 100%;
   margin: 0;
-  padding: 0}
+  padding: 0;
+}
 
 fieldset {
   display: flex;
@@ -57,7 +58,6 @@ fieldset {
 fieldset label {
   margin-bottom: 5px;
   color: #333;
-  ;
 }
 
 input[type="text"],
@@ -113,6 +113,7 @@ button[type="submit"] {
 @media (max-width: 768px) {
   .container_contact {
     width: 90%;
+    padding: 15px; /* Ajusta el padding para un mejor aspecto en dispositivos móviles */
   }
 
   form {
@@ -126,6 +127,8 @@ button[type="submit"] {
 
 @media (max-width: 480px) {
   .container_contact {
-    width: 90%;
+    width: 80%; /* Ajusta según tus necesidades */
   }
+
+  /* Puedes agregar estilos adicionales para resoluciones más pequeñas aquí */
 }
