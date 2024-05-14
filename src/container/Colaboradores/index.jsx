@@ -52,57 +52,54 @@ const Colaboradores = () => {
 
   return (
     <>
-    <motion.div className="colaboradores-container">
-      <motion.div
-        className="colaboradores-text"
-        initial="hidden"
-        animate="visible"
-        variants={textVariants}
-        transition={{ duration: 1 }}
-      >
-        <h1>Mi Gente</h1>
-        <span className="underline"></span>
-        <p>
-          Quiero expresar mi profundo agradecimiento por su dedicación y
-          excelencia en cada proyecto. Vuestra maestría técnica y enfoque
-          innovador han sido fundamentales para elevar la reputación de FS GRUPO
-          CONSTRUCTOR.
-        </p>
+      <motion.div className="colaboradores-container">
+        <motion.div
+          className="colaboradores-text"
+          initial="hidden"
+          animate="visible"
+          variants={textVariants}
+          transition={{ duration: 1 }}
+        >
+          <h1>Mi Gente</h1>
+          <span className="underline"></span>
+          <p>
+            Quiero expresar mi profundo agradecimiento por su dedicación y
+            excelencia en cada proyecto. Vuestra maestría técnica y enfoque
+            innovador han sido fundamentales para elevar la reputación de FS
+            GRUPO CONSTRUCTOR.
+          </p>
 
-        <p>
-          La habilidad para gestionar proyectos con eficiencia y atención
-          meticulosa a los detalles ha marcado la diferencia. Aprecio
-          sinceramente su compromiso con la calidad y la integridad.
-        </p>
-        <p>
-          Confío en que, con un equipo tan talentoso, continuaremos alcanzando
-          estándares sobresalientes en la creación de viviendas de alto diseño.
-          Gracias por su contribución excepcional.
-        </p>
-
-      
-      </motion.div>
-      <motion.div className="colaboradores-images-container">
-        <Slider {...sliderSettings}>
-          {colaboradores.map((colaborador, index) => (
-            <div key={index} className="container-images">
-              <Image
-                src={colaborador.imagen}
-                roundedCircle
-                className="small-image"
-              />
-              <p>{colaborador.nombre}</p>
-              <div className="detail-container">
-                <p className="colaborador_detail">{colaborador.detail}</p>
+          <p>
+            La habilidad para gestionar proyectos con eficiencia y atención
+            meticulosa a los detalles ha marcado la diferencia. Aprecio
+            sinceramente su compromiso con la calidad y la integridad.
+          </p>
+          <p>
+            Confío en que, con un equipo tan talentoso, continuaremos alcanzando
+            estándares sobresalientes en la creación de viviendas de alto
+            diseño. Gracias por su contribución excepcional.
+          </p>
+        </motion.div>
+        <motion.div className="colaboradores-images-container">
+          <Slider {...sliderSettings}>
+            {colaboradores.map((colaborador, index) => (
+              <div key={index} className="container-images">
+                <Image
+                  src={colaborador.imagen}
+                  roundedCircle
+                  className="small-image"
+                />
+                <p>{colaborador.nombre}</p>
+                <div className="detail-container">
+                  <p className="colaborador_detail">{colaborador.detail}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </motion.div>
       </motion.div>
-      
-    </motion.div>
       <Footer />
-      </>
+    </>
   );
 };
 

@@ -27,7 +27,7 @@ const Contacto = () => {
             <div>
               <p className="contact_title">INGENIERO FABIAN SALAS JIMENEZ</p>
               <hr />
-              <p className="contact_description">CORREO: info@fsgrupoconstructor.com</p>
+              <p className="contact_description">CORREO: info@fsgccr.com</p>
               <hr />
               <p className="contact_description">+506 8924-9056</p>
             </div>

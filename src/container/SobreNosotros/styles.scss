@@ -9,12 +9,12 @@
 .contenedor_de_splider {
   display: flex;
   flex: 1 1 50%;
-  height: 600px;
+  height: auto;
   overflow: auto;
 }
 
-.splider {
-  height: 400px;
+.logo-fsgrupo {
+  height: 100vh;
   width: 100%;
   background-image: url("../../assets/Marmol.jpg");
 }
@@ -64,7 +64,6 @@
   align-items: center;
   justify-content: center;
   color: white;
-
 }
 
 .fila-texto {
@@ -90,17 +89,17 @@
 /* Estilos para pantallas de celular */
 @media screen and (max-width: 760px) {
   .contenedor-main-sobre-nosotros {
-    flex-direction: column;
+    flex-direction: flex;
   }
 
   .contenedor_de_splider {
-    width: 100%;
+    width: 50%;
     height: 500px;
     overflow: hidden;
   }
 
   .splider {
-    height: 300px;
+    height: 100px;
     width: 100%;
   }
 
@@ -132,6 +131,10 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
