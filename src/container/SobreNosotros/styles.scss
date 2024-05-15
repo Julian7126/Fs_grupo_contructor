@@ -8,14 +8,15 @@
 
 .contenedor_de_splider {
   display: flex;
-  flex: 100%;
-  height: auto;
+  flex: 1 1 50%;
+  height: 420px;
   overflow: auto;
 }
 
 .logo-fsgrupo {
-  height: 50vh;
+  height: auto;
   width: 100%;
+  background-image: url("../../assets/Marmol.jpg");
 }
 
 .contenedor-mision,
@@ -97,11 +98,10 @@
     overflow: hidden;
   }
 
-  .splider {
-    height: 100px;
+  .logo-fsgrupo {
     width: 100%;
+    height: 100%;
   }
-
   .contenedor-mision,
   .contenedor-vision {
     width: 100%;
